@@ -17,7 +17,7 @@
 
 # Silo mentality
 
-![silos](https://raw.githubusercontent.com/DanySK/shared-slides/14156e4740992d1fc1ffc62c53aaae2bc21c2729/devops/silos.svg)
+![silos](https://raw.githubusercontent.com/DanySK/shared-slides/62522124c1ee8be3d463291707b974ff32518d78/devops/silos.svg)
 
 ---
 
