@@ -63,7 +63,7 @@ measuring some metrics *before* and *after* the operation.
 
 ## CI Pipeline
 
-![pipeline](https://raw.githubusercontent.com/DanySK/shared-slides/5ce02c62aae276e3f718d4e38bc3056d6e9009eb/devops/docker-publish.svg)
+![pipeline](https://raw.githubusercontent.com/DanySK/shared-slides/e375d394b0eb319d6c5b9b6a7a2c707dc347b7ac/devops/docker-publish.svg)
 
 ---
 
