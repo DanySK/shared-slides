@@ -9,10 +9,10 @@ jobs:
   ruby-generator-test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3.0.2
+    - uses: actions/checkout@v3.1.0
       with:
         path: shared-slides
-    - uses: actions/checkout@v3.0.2
+    - uses: actions/checkout@v3.1.0
       with:
         repository: DanySK/Course-DTM-SE-3
         path: target
