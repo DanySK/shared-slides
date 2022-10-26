@@ -57,7 +57,7 @@ measuring some metrics *before* and *after* the operation.
 
 ## Microservice-ified architecture
 
-![new-arch](https://raw.githubusercontent.com/DanySK/shared-slides/e375d394b0eb319d6c5b9b6a7a2c707dc347b7ac/devops/sisred-new-arch.svg)
+![new-arch](https://raw.githubusercontent.com/DanySK/shared-slides/84eadfe2c2fb7da050763d60d05c549b953e18fe/devops/sisred-new-arch.svg)
 
 ---
 
