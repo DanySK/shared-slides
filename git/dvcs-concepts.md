@@ -467,7 +467,7 @@ flowchart RL
 
 ---
 
-![four commits later](https://raw.githubusercontent.com/DanySK/shared-slides/e375d394b0eb319d6c5b9b6a7a2c707dc347b7ac/git/4commitslater.png)
+![four commits later](https://raw.githubusercontent.com/DanySK/shared-slides/84eadfe2c2fb7da050763d60d05c549b953e18fe/git/4commitslater.png)
 
 ---
 
