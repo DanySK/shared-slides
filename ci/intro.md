@@ -13,7 +13,7 @@ _Verifying_ that the build remains intact
 
 # Traditional integration
 
-![integration-traditional](https://raw.githubusercontent.com/DanySK/shared-slides/84eadfe2c2fb7da050763d60d05c549b953e18fe/ci/integration-traditional.png)
+![integration-traditional](https://raw.githubusercontent.com/DanySK/shared-slides/de260d8b34eff7c4a409d98a096a5e7f2e79b4e4/ci/integration-traditional.png)
 
 ---
 
@@ -26,7 +26,7 @@ _Verifying_ that the build remains intact
 
 # Continuous integration
 
-![integration-traditional](https://raw.githubusercontent.com/DanySK/shared-slides/84eadfe2c2fb7da050763d60d05c549b953e18fe/ci/integration-continuous.png)
+![integration-traditional](https://raw.githubusercontent.com/DanySK/shared-slides/de260d8b34eff7c4a409d98a096a5e7f2e79b4e4/ci/integration-continuous.png)
 
 ---
 
