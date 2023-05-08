@@ -65,7 +65,7 @@ Runtime **isolation** without operating system **replication**
 
 ## Closer to confined processes
 
-![](https://raw.githubusercontent.com/DanySK/shared-slides/696dc95b813275aa4c11c798745eb863edc28677/containerization/chroot.jpeg)
+![](https://raw.githubusercontent.com/DanySK/shared-slides/de260d8b34eff7c4a409d98a096a5e7f2e79b4e4/containerization/chroot.jpeg)
 
 ---
 
