@@ -53,7 +53,7 @@ Runtime **isolation** without operating system **replication**
 
 ## Why containers?
 
-![](https://raw.githubusercontent.com/DanySK/shared-slides/de260d8b34eff7c4a409d98a096a5e7f2e79b4e4/containerization/docker-born.jpeg)
+![](https://raw.githubusercontent.com/DanySK/shared-slides/518047bf7b6686356cad8d9883351c205b7d4f02/containerization/docker-born.jpeg)
 
 ---
 
