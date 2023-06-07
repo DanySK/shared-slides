@@ -32,7 +32,7 @@ Single branch, shared truth repository, frequent merges
 
 ## Git flow (classic)
 
-![Git flow](https://raw.githubusercontent.com/DanySK/shared-slides/518047bf7b6686356cad8d9883351c205b7d4f02/git/dvcs-flow-sink.svg)
+![Git flow](https://raw.githubusercontent.com/DanySK/shared-slides/6824b93d3d52b841386a744f57953a73ccb67378/git/dvcs-flow-sink.svg)
 
 ---
 
