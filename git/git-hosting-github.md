@@ -1,6 +1,6 @@
 ## Centralized Version Control Systems
 
-![Centralized VCS](https://raw.githubusercontent.com/DanySK/shared-slides/518047bf7b6686356cad8d9883351c205b7d4f02/git/centralized-vcs.svg)
+![Centralized VCS](https://raw.githubusercontent.com/DanySK/shared-slides/6824b93d3d52b841386a744f57953a73ccb67378/git/centralized-vcs.svg)
 
 ---
 
