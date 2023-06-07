@@ -16,7 +16,7 @@ Elements to consider:
 
 ## Trunk-based(-like) development
 
-![Trunk-based development (like)](https://raw.githubusercontent.com/DanySK/shared-slides/de260d8b34eff7c4a409d98a096a5e7f2e79b4e4/git/dvcs-sink.svg)
+![Trunk-based development (like)](https://raw.githubusercontent.com/DanySK/shared-slides/6824b93d3d52b841386a744f57953a73ccb67378/git/dvcs-sink.svg)
 
 ---
 
@@ -69,7 +69,7 @@ These copies are called **forks**
 
 ## Single branch, multiple forks
 
-![Trunk-based development (like)](https://raw.githubusercontent.com/DanySK/shared-slides/de260d8b34eff7c4a409d98a096a5e7f2e79b4e4/git/dvcs-fork.svg)
+![Trunk-based development (like)](https://raw.githubusercontent.com/DanySK/shared-slides/6824b93d3d52b841386a744f57953a73ccb67378/git/dvcs-fork.svg)
 
 ---
 
@@ -83,7 +83,7 @@ These copies are called **forks**
 
 ## Git flow over multiple forks
 
-![Trunk-based development (like)](https://raw.githubusercontent.com/DanySK/shared-slides/de260d8b34eff7c4a409d98a096a5e7f2e79b4e4/git/dvcs-flow-fork.svg)
+![Trunk-based development (like)](https://raw.githubusercontent.com/DanySK/shared-slides/6824b93d3d52b841386a744f57953a73ccb67378/git/dvcs-flow-fork.svg)
 
 ---
 
