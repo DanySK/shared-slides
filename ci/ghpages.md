@@ -33,7 +33,7 @@ Two possibilities:
 
 Once done, enable GitHub pages on the repository settings:
 
-![Enable GitHub Pages snapshot](https://raw.githubusercontent.com/DanySK/shared-slides/518047bf7b6686356cad8d9883351c205b7d4f02/ci/ghpages-enable.png)
+![Enable GitHub Pages snapshot](https://raw.githubusercontent.com/DanySK/shared-slides/6824b93d3d52b841386a744f57953a73ccb67378/ci/ghpages-enable.png)
 
 ---
 
