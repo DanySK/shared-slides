@@ -40,7 +40,7 @@ Traditionally, **protoduction** is jargon for a *prototype that ends up in produ
 
 <div style="display:inline-block;vertical-align:top;">
 
-![](https://raw.githubusercontent.com/DanySK/shared-slides/518047bf7b6686356cad8d9883351c205b7d4f02/ci/protoduction.jpg)
+![](https://raw.githubusercontent.com/DanySK/shared-slides/6824b93d3d52b841386a744f57953a73ccb67378/ci/protoduction.jpg)
 
 </div>
 <div style="display:inline-block;">
