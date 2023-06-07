@@ -63,7 +63,7 @@ Traditionally, **protoduction** is jargon for a *prototype that ends up in produ
 * Operations requiring a long time should be *automated*
     * And run somewhere else than devs' PCs
 
-![](https://raw.githubusercontent.com/DanySK/shared-slides/518047bf7b6686356cad8d9883351c205b7d4f02/ci/compiling.png)
+![](https://raw.githubusercontent.com/DanySK/shared-slides/6824b93d3d52b841386a744f57953a73ccb67378/ci/compiling.png)
 
 ---
 
