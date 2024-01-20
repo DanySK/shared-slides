@@ -7,7 +7,7 @@ on:
 
 jobs:
   ruby-generator-test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v4.1.1
       with:
@@ -55,7 +55,7 @@ jobs:
       run: |
         shared-slides/preprocess.rb
   generator-success:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs:
       - ruby-generator-test
       - existing-websites-test
