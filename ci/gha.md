@@ -270,7 +270,9 @@ The simplest way to send commands is to print on standard output a message in th
 
 In particular, actions can set outputs by printing:
 <br>
-`::set-output name={name}::{value}`
+~~`::set-output name={name}::{value}`~~ deprecated in favor of:
+<br>
+`echo "{name}={value}" >> "$GITHUB_OUTPUT"`
 
 {{< github owner="DanySK" repo="Tutorial-GitHub-Actions-Minimal" path=".github/workflows/use-step-outputs.yml" from=6 >}}
 
