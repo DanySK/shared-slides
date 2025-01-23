@@ -91,10 +91,12 @@ Usually together, but:
 * **Open source**: focus on availability of *source code* and right to modify and share it
 * **Free**: focus on freedom to use the *program*, modify, and share it
 
+<!-- markdown-link-check-disable -->
 There are non-free open source licenses:
 * Apple Public source license 1.0 $\Rightarrow$ [too generic](https://www.gnu.org/licenses/license-list.html#apsl1)
 * Artistic License 1.0 $\Rightarrow$ overly vague
 * Nasa Open Source Agreement
+<!-- markdown-link-check-enable -->
 
 And there are free non-open source licenses as well
 <!-- markdown-link-check-disable-next-line -->
