@@ -81,9 +81,9 @@ commit tag: "initial commit"
 branch develop
 commit
 checkout master
-commit type: highlight
+commit type: HIGHLIGHT
 checkout develop
-commit type: highlight
+commit type: HIGHLIGHT
 commit
 branch feature/foo
 commit
@@ -106,9 +106,9 @@ checkout develop
 merge feature/foo
 commit
 checkout master
-commit type: highlight
+commit type: HIGHLIGHT
 checkout develop
-commit type: highlight
+commit type: HIGHLIGHT
 ```
 
 ---
