@@ -126,9 +126,9 @@ commit tag: "initial commit"
 branch develop
 commit
 checkout master
-commit type: highlight
+commit type: HIGHLIGHT
 checkout develop
-commit type: highlight
+commit type: HIGHLIGHT
 commit
 branch release/1.2.3
 commit
@@ -162,9 +162,9 @@ commit tag: "initial commit"
 branch develop
 commit
 checkout master
-commit type: highlight
+commit type: HIGHLIGHT
 checkout develop
-commit type: highlight
+commit type: HIGHLIGHT
 checkout master
 commit tag: "1.2.3"
 branch hotfix/1.2.4
