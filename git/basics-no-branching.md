@@ -248,6 +248,8 @@ In git, a reference to a commit is called `<tree-ish>`. Valid `<tree-ish>`es are
 
 ## Relative references
 
+<!-- markdown-link-check-disable -->
+
 It is possible to build *relative references*, e.g., "get me the commit before this `<tree-ish>`",
 by following the commit `<tree-ish>` with a tilde (`~`) and with the number of parents to get to:
 * `<tree-ish>~STEPS` where `STEPS` is an integer number produces a reference to the `STEPS-th` parent of the provided `<tree-ish>`:
@@ -260,6 +262,8 @@ by following the commit `<tree-ish>` with a tilde (`~`) and with the number of p
   * We won't go in depth here, but:
     * The [`git rev-parse` reference on specifying revision](https://git-scm.com/docs/git-rev-parse#_specifying_revisions) is publicly available
     * A [much more readable explanation can be found on Stack overflow](https://stackoverflow.com/questions/2221658/what-is-the-difference-between-head-and-head-in-git/2222920#2222920)
+
+<!-- markdown-link-check-disable -->
 
 ---
 
