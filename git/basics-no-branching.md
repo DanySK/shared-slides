@@ -259,7 +259,7 @@ by following the commit `<tree-ish>` with a tilde (`~`) and with the number of p
 * Selection of parents can be performed with caret in case of multiple parents (`^`)
   * We won't go in depth here, but:
     * The [`git rev-parse` reference on specifying revision](https://git-scm.com/docs/git-rev-parse#_specifying_revisions) is publicly available
-    * A [much more readable explanation can be found on Stack overflow](https://stackoverflow.com/a/2222920/1916413)
+    * A [much more readable explanation can be found on Stack overflow](https://stackoverflow.com/questions/2221658/what-is-the-difference-between-head-and-head-in-git/2222920#2222920)
 
 ---
 
