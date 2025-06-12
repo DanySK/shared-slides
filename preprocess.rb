@@ -6,7 +6,7 @@ end
 
 files = Dir["**/content/**/*generator.md"]
 puts "Files to examine: #{files}"
-matcher = /<!--\s+write-here\s+"(?<path>[^"]+)"\s*-->(?<contents>.*?)<!--\s*end-write\s*-->/sum
+matcher = /<!--\s+write-here(?<nowarn>-code)?\s+"(?<path>[^"]+)"\s*-->(?<contents>.*?)<!--\s*end-write\s*-->/sum
 
 for file in files do
     puts "Replacing contents of #{file}"
@@ -16,7 +16,8 @@ for file in files do
         break if match.nil?
         source = match[:path]
         replacement = File.read(source)
-        text.sub!(matcher, "#{warning(file)}\n#{File.read(source)}\n")
+        warn = match[:nowarn] ? "" : "#{warning(file)}\n"
+        text.sub!(matcher, "#{warn}#{replacement}\n")
         puts "Replacement with the contents of #{source}"
     end
     target_dir = File.dirname(file)
