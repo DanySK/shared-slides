@@ -68,8 +68,15 @@ Line endings should instead be **configured per file type!**
   * It can do [much more than enforcing line endings](https://git-scm.com/docs/gitattributes), actually
 * Example: 
 ```text
+# Automatically normalize line endings to LF for all text files (not for binaries)
 * text=auto eol=lf
+# For files with .cmd (case-insensitive) extension, enforce CRLF (Windows style) line endings.
 *.[cC][mM][dD] text eol=crlf
+# For .bat files (Windows batch scripts), use CRLF endings, consistent with Windows shell requirements.
 *.[bB][aA][tT] text eol=crlf
+# For PowerShell script files (.ps1), enforce CRLF endings.
 *.[pP][sS]1 text eol=crlf
 ```
+
+This setup ensures that platform-specific scripts retain the line endings expected by their respective interpreters, while all other *text* files use consistent Unix-style LF endings.
+Binary files are tracked with no modification.
