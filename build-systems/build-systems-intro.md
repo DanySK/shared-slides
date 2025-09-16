@@ -10,12 +10,14 @@ May include, depending on the system specifics:
 * Source code *quality assurance*
 * *Dependency management*
 * *Compilation*, linking
+* Binary *quality assurance*
 * *Binary manipulation*
 * *Test execution*
 * Test *quality assurance* (e.g., coverage)
 * API *documentation*
 * *Packaging*
 * *Delivery*
+* *Deployment*
 
 ---
 
@@ -24,11 +26,11 @@ May include, depending on the system specifics:
 Automation of the build lifecycle
 
 * In principle, the lifecycle could be executed manually
-* In reality *time is precious* and *repetitivy is boring*
+* In reality *time is precious* and *repetition is boring*
 
 $\Rightarrow$ Create software that automates the building of some software!
 
-* All those concerns that hold for sofware creation hold for build systems creation...
+* All those concerns that hold for software creation hold for build systems creation...
 
 ---
 
