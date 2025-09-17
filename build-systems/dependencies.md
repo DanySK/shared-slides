@@ -120,3 +120,24 @@ to a known good set.
 | Reproducibility | Low                        | *Maximum* (transitive dependencies are locked) | High (transitive drift remains)               |
 | Reliability     | Low (uncontrolled updates) | Medium (testing all ranges is impossible)      | *High* (controlled updates, transitive drift) |
 
+---
+
+## Dependency scopes
+
+Dependencies may be needed in different contexts:
+* **Compile-time**: needed to compile the code (e.g., libraries whose types are used in method signatures)
+* **Runtime**: needed to run the code (e.g., libraries whose types are used in method bodies)
+    * Note: it is common for runtime dependencies to be a *superset* of compile-time dependencies
+    (some dependencies are runtime-only, e.g., JDBC drivers)
+    * Note: even though most of the time runtime dependencies are also compile-time dependencies,
+    this is not always the case (e.g., some components of ANTLR4...)
+* **Test**: needed to compile and run tests (e.g., testing frameworks)
+* **Test runtime**: needed to run tests (e.g., mocking frameworks)
+    * Note: similar to the runtime scope, test runtime dependencies are often a *superset* of test dependencies
+* **Build time**: needed to build the code (e.g., code generators, linters, documentation tools)
+* ...
+
+Scopes are typically _pre-defined in **declarative** build systems_ and _manually defined in **imperative** ones_
+(there are exceptions to this rule).
+
+*__Hybrid__ automators* often provide _pre-defined scopes_ and _ways to define additional custom scopes_.
