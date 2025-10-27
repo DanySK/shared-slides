@@ -105,9 +105,8 @@ merged: { foo: { look: at, me: [ "I'm", 'dancing' ] }, look: to, me: [ "I'm", 'd
 
 ## GitHub Actions' actions
 
-GHA's YAML parser *does not support standard YAML anchors and merge keys*
-
-* it is a well-known limit with [an issue report open since ages](https://github.com/actions/runner/issues/1182)
+GHA's YAML parser recently ([and after a long time](https://github.com/actions/runner/issues/1182))
+added support for *YAML anchors* but does **not** support *merge keys*.
 * there is a [workaround](https://github.com/DanySK/true-yaml-actions) but it is very custom
 
 GHA achieves reuse via:
