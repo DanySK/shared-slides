@@ -91,6 +91,7 @@ You are warmly recommended to learn how it works and [the best security practice
         * please understand the associated security issues, if you don't, use a password.
 2. Obtain your **public key**
     * `cat ~/.ssh/id_rsa.pub`
+        * If you get an error "No such file or directory", try: `cat cat ~/.ssh/id_ed25519.pub`
     * Looks something like:
     ```text
     ssh-rsa AAAAB3Nza<snip, a lot of seemingly random chars>PIl+qZfZ9+M= you@your_hostname
