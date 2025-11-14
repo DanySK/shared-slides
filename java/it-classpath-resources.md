@@ -29,12 +29,19 @@ public abstract class ClassLoader {
     * il parent di default è il **system class loader** che carica classi e risorse *dal classpath*
 * Una **risorsa di sistema** (system resource) è una risorsa "built-in" del sistema software, oppure disponibile nel sistema host (ad es. nel filesystem locale)
     * Per esempio, l'implementazione di base ricerca nel `CLASSPATH`
-* L'argomento di `getSystemResource` e `getSystemResourceAsStream` è il **nome di una risorsa** (**non un percorso del filesystem!**), che è una stringa separata da `/` che identifica la risorsa
+* L'argomento di `getSystemResource` e `getSystemResourceAsStream` è il **nome di una risorsa**
+(**non un percorso del filesystem!**), che è una stringa separata da `/` che identifica la risorsa
     * L'interpretazione del nome della risorsa dipende dall'implementazione
     * Il system class loader usa il nome come un path per cercare la risorsa a partire dalle entry del classpath
 * `ClassLoader.getSystemResource()` equivale a `ClassLoader.getSystemClassLoader().getResource()`
 
+#### Nota: dal classpath è possibile solo **leggere** risorse, non **scriverle**
 
+* Le risorse caricate dal classpath sono **in sola lettura**
+    * Per esempio, se la risorsa è dentro un JAR, non è possibile modificarla "dentro" il JAR
+* Se si ha la necessità di modificare una risorsa, è necessario copiarla in
+un percorso su cui l'utente abbia diritto di scrittura e lavorare su quella copia
+    * Tipicamente, una cartella nascosta nella la home utente: `System.getProperty("user.home")`
 
 ---
 
