@@ -51,7 +51,7 @@ Traditionally, **protoduction** is jargon for a *prototype that ends up in produ
         * *unpolished*,
         * *badly designed*
     * Very common, unfortunately
-* This si different in a continuously integrated environment
+* This is different in a continuously integrated environment
     * *Incrementality* is fostered
     * Partial features are *up to date* with the mainline
 </div>
