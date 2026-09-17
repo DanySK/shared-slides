@@ -4,7 +4,7 @@ We applied DevOps (and microservice-ification) to an existing software project,
 measuring some metrics *before* and *after* the operation.
 
 * The detailed *experience report* has been presented at the 37th International Conference on Software Maintenance and Evolution ([ICSME 2021](https://icsme2021.github.io/))
-    * <!-- markdown-link-check-disable -->[Scientific paper](https://doi.org/10.1109/ICSME52107.2021.00051)<!-- markdown-link-check-ensable -->
+    * <!-- markdown-link-check-disable --> <a href="https://doi.org/10.1109/ICSME52107.2021.00051" alt="Scientific paper">Scientific paper</a><!-- markdown-link-check-enable -->
 
 ---
 
