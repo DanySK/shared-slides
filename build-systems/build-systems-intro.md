@@ -30,7 +30,7 @@ Automation of the build lifecycle
 
 $\Rightarrow$ Create software that automates the building of some software!
 
-* All those concerns that hold for software creation hold for build systems creation...
+* All those concerns that hold for software creation hold for build system creation...
 
 ---
 
@@ -47,7 +47,7 @@ from code to artifacts
 **Declarative**/**Standard**: adhere to some convention, customizing some settings
 * *Examples*: Apache Maven, Python Poetry
 * Separation between *what* to do and *how* to do it
-  * The build system decides how to do the stuff
+  * The build system decides how to do it
 * Easy to *adapt* and *port* across projects
 * *Configuration limited* by the provided options
 
@@ -55,7 +55,7 @@ from code to artifacts
 
 ## Hybrid automators
 
-Create a *declarative infrastructure* upon an *imperative basis*, and
+Create a *declarative infrastructure* on top of an *imperative basis*, and
 *allow easy access to the underlying machinery*
 
 **DSL**s are helpful in this context: they can "hide" imperativity without ruling it out

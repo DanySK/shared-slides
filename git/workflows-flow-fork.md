@@ -57,7 +57,7 @@ Multiple branches, shared truth repository
 
 These copies are called **forks**
 
-* Branches on one fork can be requested to be merged on another fork
+* Branches on one fork can be requested to be merged into another fork
   * With **merge request** (also called **pull request**, depending on the host)
 * Pull requests enable easier code review
   * Necessary when the developer *does not trust* the contributor
@@ -69,7 +69,7 @@ These copies are called **forks**
 
 ## Single branch, multiple forks
 
-![Trunk-based development (like)](https://raw.githubusercontent.com/DanySK/shared-slides/6824b93d3d52b841386a744f57953a73ccb67378/git/dvcs-fork.svg)
+![Single branch, multiple forks](https://raw.githubusercontent.com/DanySK/shared-slides/6824b93d3d52b841386a744f57953a73ccb67378/git/dvcs-fork.svg)
 
 ---
 
@@ -83,7 +83,7 @@ These copies are called **forks**
 
 ## Git flow over multiple forks
 
-![Trunk-based development (like)](https://raw.githubusercontent.com/DanySK/shared-slides/6824b93d3d52b841386a744f57953a73ccb67378/git/dvcs-flow-fork.svg)
+![Git flow over multiple forks](https://raw.githubusercontent.com/DanySK/shared-slides/6824b93d3d52b841386a744f57953a73ccb67378/git/dvcs-flow-fork.svg)
 
 ---
 

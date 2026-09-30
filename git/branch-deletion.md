@@ -4,7 +4,7 @@
 
 Also, the *history* tracked by git is a *directed acyclic graph* (each commit has a reference to its parents)
 
-$\Rightarrow$ *Branches can be removed without information loss*, as far as there is at least *another branch* from which *all the commits* of the deleted branch are *reachable*
+$\Rightarrow$ *Branches can be removed without information loss*, as long as there is at least *one other branch* from which *all the commits* of the deleted branch are *reachable*
 
 *Safe* branch deletion is performed with `git branch -d branch-name` (fails if there is information loss).
 

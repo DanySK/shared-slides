@@ -21,7 +21,7 @@
 Several services allow the creation of *shared repositories on the cloud*.
 They *enrich* the base git model with services built around the tool:
 
-* **Forks**: copies of a repository associated to different users/organizations
+* **Forks**: copies of a repository associated with different users/organizations
 * **Pull requests** (or **Merge requests**): formal requests to *pull* updates from *forks*
   * repositories do not allow pushes from everybody
   * what if we want to contribute to a project we cannot push to?
@@ -39,7 +39,7 @@ They *enrich* the base git model with services built around the tool:
   * *Academic plan*
 * <i class="fa-brands fa-gitlab"></i> **GitLab**
   * Available for free as *self-hosted*
-  * Userbase grew when Microsoft acquired GitHub
+  * User base grew when Microsoft acquired GitHub
 * <i class="fa-brands fa-bitbucket"></i> **Bitbucket**
   * From Atlassian
   * Well integrated with other products (e.g., Jira)
@@ -53,7 +53,7 @@ They *enrich* the base git model with services built around the tool:
 * *Free for open source*
 * *Academic accounts*
 * *De-facto standard* for open source projects
-* One *static website* per-project, per-user, and per-organization
+* One *static website* per project, per user, and per organization
   * (a feature exploited by these slides)
 
 ---
@@ -63,17 +63,17 @@ They *enrich* the base git model with services built around the tool:
 <i class="fa-brands fa-github"></i> repositories are uniquely identified by an **owner** and a **repository name**
 * `owner/repo` is a name unique to every repository
 
-<i class="fa-brands fa-github"></i> supports two kind of authentications:
+<i class="fa-brands fa-github"></i> supports two kinds of authentication:
 ### **HTTPS** -- Requires authentication via token
 * The <i class="fab fa-windows"></i> port of <i class="fa-brands fa-git"></i> should include a graphical authenticator, otherwise:
     * a token must be generated with `repo` access scope at https://github.com/settings/tokens/new
     * the URL `https://github.com/owner/repo.git` becomes: `https://token@github.com/owner/repo.git`
-* Recommended to <i class="fab fa-windows"></i> users with no Unix shell
+* Recommended for <i class="fab fa-windows"></i> users with no Unix shell
 
 ### **Secure Shell (SSH)** -- Requires authentication via public/private key pair
-* Recommended to <i class="fab fa-linux"></i>/<i class="fab fa-apple"></i> users and to those with a working SSH installation
+* Recommended for <i class="fab fa-linux"></i>/<i class="fab fa-apple"></i> users and for those with a working SSH installation
 * The same protocol used to open remote terminals on other systems
-* Tell Github your **public** key and use the **private** (and *secret*) key to authenticate
+* Tell GitHub your **public** key and use the **private** (and *secret*) key to authenticate
 
 ---
 
@@ -81,7 +81,7 @@ They *enrich* the base git model with services built around the tool:
 
 **Disclaimer**: this is a "quick and dirty" way of generating and using SSH keys.
 <!-- markdown-link-check-disable-next-line -->
-You are warmly recommended to learn how it works and [the best security practices](https://archive.ph/3Pn0L).
+You are strongly encouraged to learn how it works and [the best security practices](https://archive.ph/3Pn0L).
 
 1. If you don't already have one, generate a new key pair
     * `ssh-keygen`
@@ -91,7 +91,7 @@ You are warmly recommended to learn how it works and [the best security practice
         * please understand the associated security issues, if you don't, use a password.
 2. Obtain your **public key**
     * `cat ~/.ssh/id_rsa.pub`
-        * If you get an error "No such file or directory", try: `cat cat ~/.ssh/id_ed25519.pub`
+        * If you get an error "No such file or directory", try: `cat ~/.ssh/id_ed25519.pub`
     * Looks something like:
     ```text
     ssh-rsa AAAAB3Nza<snip, a lot of seemingly random chars>PIl+qZfZ9+M= you@your_hostname

@@ -117,7 +117,7 @@ commit type: HIGHLIGHT
 
 sprouts from `develop` $\Rightarrow$ dies in `master` and `develop`
 
-* Pre-release changes (fixing hardcoded version numbers, changelogs, etc)
+* Pre-release changes (fixing hardcoded version numbers, changelogs, etc.)
 
 ```mermaid
 %%{init: { 'gitGraph': { 'mainBranchName': 'master', 'showCommitLabel': false }} }%%

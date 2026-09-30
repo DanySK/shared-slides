@@ -19,8 +19,8 @@ _Verifying_ that the build remains intact
 
 # The Integration Hell
 
-* Traditional software development takes several months for *“integrating”* a couple of years of development
-* The longer there is no integrated project, the higher the **risk**
+* Traditional software development takes several months to *“integrate”* a couple of years of development
+* The longer the project goes without integration, the higher the **risk**
 
 ---
 
@@ -61,7 +61,7 @@ Traditionally, **protoduction** is jargon for a *prototype that ends up in produ
 ## Intensive operations should be elsewhere
 * The build process should be *rich* and *fast*
 * Operations requiring a long time should be *automated*
-    * And run somewhere else than devs' PCs
+    * And run somewhere other than devs' PCs
 
 ![](https://raw.githubusercontent.com/DanySK/shared-slides/6824b93d3d52b841386a744f57953a73ccb67378/ci/compiling.png)
 
@@ -73,11 +73,11 @@ Software that promotes CI practices should:
 * Provide *clean environments* for compilation/testing
 * Provide a *wide range* of environments
     * Matching the relevant specifications of the actual targets
-* High degree of *configurability*
+* Offer a high degree of *configurability*
 * Possibly, *declarative configuration*
 * A *notification system* to alert about failures or issues
 * Support for *authentication* and deployment to external services
 
 **Plenty** of integrators on the market
 
-Circle CI, Travis CI, Werker, done.io, Codefresh, Codeship, Bitbucket Pipelines, GitHub Actions, GitLab CI/CD Pipelines, JetBrains TeamCity...
+Circle CI, Travis CI, Wercker, Drone.io, Codefresh, Codeship, Bitbucket Pipelines, GitHub Actions, GitLab CI/CD Pipelines, JetBrains TeamCity...

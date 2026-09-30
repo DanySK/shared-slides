@@ -73,7 +73,7 @@ Runtime **isolation** without operating system **replication**
 
 Docker is a containerization platform
 
-*Standard de-facto* in industry
+*De-facto standard* in industry
 
 **Base concepts**
 - *Image*
@@ -91,7 +91,7 @@ Docker is a containerization platform
 ## Docker architecture
 
 - *Registry*: repository of images
-- *Daemon*: service pulling images from registries and instancing containers
+- *Daemon*: service pulling images from registries and instantiating containers
 - *Client*: interface towards the daemon
 
 ![](https://raw.githubusercontent.com/DanySK/shared-slides/6824b93d3d52b841386a744f57953a73ccb67378/containerization/architecture.svg)
@@ -106,15 +106,15 @@ Docker is a containerization platform
 4. Pull an image: `docker pull adoptopenjdk`
 5. Run a container! `docker run adoptopenjdk`
 
-Every container provides a *default command*, running without options runs such default in a *non-interactive* terminal.
+Every image provides a *default command*; running without options runs that default in a *non-interactive* terminal.
 
 Running in interactive mode can be achieved with the `-i` option
 
-Running a custom command can be achieved with writing the command after the image name
+Running a custom command can be achieved by writing the command after the image name
 * e.g., `docker run -i adoptopenjdk bash`
 * parameters for the custom command can follow
-* use the `t` option to run in a *pseudo-tty*
-* use the `--rm` to remove the container after use
+* use the `-t` option to run in a *pseudo-tty*
+* use `--rm` to remove the container after use
 
 ---
 
@@ -186,12 +186,12 @@ CMD bash
 
 Image naming is done via *tags*
 
-The easiest way to do so is assigning tags at *build time* with the `-t` options of `docker build`
+The easiest way to do so is assigning tags at *build time* with the `-t` option of `docker build`
 
 The option can be repeated multiple times to make multiple tags
 
 ```bash
-docker build -t "myImage:latest" -t "myImage:0.1.0"
+docker build -t "myImage:latest" -t "myImage:0.1.0" .
 ```
 
 `latest` is usually used to identify the most recent version of some image
@@ -216,8 +216,8 @@ Once done, publication is performed via `push`:
 
 ## Building docker images in CI
 
-Of course, as any other software, *custom docker images should get built in CI*
+Of course, like any other software, *custom docker images should get built in CI*
 
 Several integrators use containers as build environments: it is possible to *build a container using a container*
 
-More in general, there is *no inherent limit to nesting containers*
+More generally, there is *no inherent limit to nesting containers*

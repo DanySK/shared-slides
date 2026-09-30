@@ -29,9 +29,9 @@ How did you organize the work to *maximize the productivity*?
 * *One screen, many heads*
   * a.k.a. one works, the other ones sleep
 * *Locks*: "please do not touch section 2, I'm working on that"
-  * probability of arising conflicts close to 100%
-* *Realtime-sharing* (like google docs or overleaf)
-  * okay in many cases for text documents (but with a risk of frankestein-ization)
+  * probability of conflicts arising close to 100%
+* *Real-time sharing* (like Google Docs or Overleaf)
+  * okay in many cases for text documents (but with a risk of frankenstein-ization)
   * disruptive with code (inconsistencies are much less tolerable in formal languages)
 
 ---
@@ -45,10 +45,10 @@ Tools meant to support the development of projects by:
   * Authors, dates, notes...
 * *Merging* information produced at different stages
 * (in some cases) *facilitate parallel workflows*
-* Also called Source Content Management (SCM)
+* Also called Source Code Management (SCM)
 
 **Distributed**: *Every copy* of the repository contains
-(i.e., every developer locally have)
+(i.e., every developer locally has)
 *the entire history*.
 
 **Centralized**: A *reference copy* of the repository contains the whole history;
@@ -59,11 +59,11 @@ developers work on a subset of such history
 
 ## Short history
 
-* **Concurrent Versioning System (CVS)** (1986): client-server (*centralized* model, the truth is on the server), operates on single files or repository-level, history stored in a hidden directory, uses delta compression to save space.
-* **Apache Subversion (SVN)** (2000): successor to CVS, still largely used (especially in businesses that struggle to renovate their processes). *Centralized* model (similar to CVS). Improved binary file management. Improved concurrency for the operation, still cumbersome for parallel workflows.
+* **Concurrent Versions System (CVS)** (1986): client-server (*centralized* model, the truth is on the server), operates on single files or repository-level, history stored in a hidden directory, uses delta compression to save space.
+* **Apache Subversion (SVN)** (2000): successor to CVS, still largely used (especially in businesses that struggle to modernise their processes). *Centralized* model (similar to CVS). Improved binary file management. Improved concurrency for operations, though still cumbersome for parallel workflows.
 * **Mercurial** and **Git** (both April 2005): *decentralized* version control systems (DVCSs), no "special" copy of the repository, each client stores the whole history. Highly scalable. Foster parallel work by allowing easy branching and merging. Very similar conceptually (when two successful tools emerge at the same time with a similar model independently, it is an indication that the underlying model is "the right one" for the context).
 
-**Git** is now the dominant DVCS (although Mercurial is still in use, e.g., for Python, Java, Facebook).
+**Git** is now the dominant DVCS (most of former flaship Mercurial users -- Python, OpenJDK, Meta -- have since moved away).
 
 ---
 
@@ -328,12 +328,11 @@ If no branch has been created at the first commit, a default name is used.
 ## DVCS concepts and terminology: *Commit references*
 
 To be able to go *back in time* or *change branch*, we need to **refer to commits**
-* 
 * Commit references are also referred to as `tree-ish`es
 * Every commit has a **unique identifier**, which is a valid reference
 * A **branch name** is a valid commit reference (points to the *last commit of that branch*)
 
-### A special commit name is  **HEAD**, which refers to the *current commit*
+### A special commit name is **HEAD**, which refers to the *current commit*
   * When committing, the **HEAD** moves forward to the new commit
 
 

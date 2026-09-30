@@ -26,8 +26,8 @@ measuring some metrics *before* and *after* the operation.
 
 * *Client-server* stand-alone application
 * *Delphi* front-end, *Microsoft SQL Server* backend
-* Editors (paid by Maggioli) are *experts in law entering information on the client*
-* The information is then exposed into a (paid access) *portal* with up-to-date legal information
+* Editors (paid by Maggioli) are *legal experts who enter information via the client*
+* The information is then exposed in a (paid-access) *portal* with up-to-date legal information
 
 ---
 
@@ -250,7 +250,7 @@ measuring some metrics *before* and *after* the operation.
 * Practices must be *tailored* to the team
 * Time-consuming, repetitive, and cumbersome procedures must be *automated*
 * Obsolete practices must be *removed*
-* **Communication** is key, awareness must be shed across the team of the expected benefits
+* **Communication** is key: awareness of the expected benefits must be spread across the team
 
 ---
 

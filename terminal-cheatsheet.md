@@ -2,9 +2,9 @@
 
 | Operation | <i class="fab fa-linux"></i> <i class="fab fa-apple"></i> *nix | <i class="fab fa-windows"></i> win |
 | --- | --- | --- |
-| Print the current directory location | `pwd` | `echo %cd%`
+| Print the current directory location | `pwd` | `echo %cd%` |
 | Remove the file `foo` (does not work with directories) | `rm foo` | `del foo` |
-| Remove directory `bar` | `rm -r bar` | `del bar` |
+| Remove directory `bar` | `rm -r bar` | `rd /s bar` |
 | Change disk (e.g., switch to `D:`) | n.a., single root (`/`) | `D:` |
 | Move to the subdirectory `baz` | `cd baz` | `cd baz` |
 | Move to the parent directory | `cd ..` | `cd..` |

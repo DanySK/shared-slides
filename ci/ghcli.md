@@ -13,10 +13,10 @@ Install from package manager, then:
 
 ```bash
 gh --version
-gh auth login            # guided OAuth or token
-gh auth status           # verify
-gh config set prompt disabled true   # non-interactive scripts
-gh alias set prd 'pr create -d -f'   # example alias
+gh auth login                      # guided OAuth or token
+gh auth status                     # verify
+gh config set prompt disabled      # non-interactive scripts
+gh alias set prd 'pr create -d -f' # example alias
 ```
 
 Multiple accounts:
@@ -51,7 +51,7 @@ Releases and notifications:
 
 ```bash
 gh release create v1.2.0 dist/* -t "v1.2.0" -n "Changelog…"
-gh notif list --unread
+gh api notifications
 ```
 
 ---
@@ -64,7 +64,7 @@ Workflows:
 gh workflow list
 gh run list
 gh run watch --job 123456789
-gh workflow run build.yml -f ref=main
+gh workflow run build.yml --ref main
 ```
 
 Secrets:

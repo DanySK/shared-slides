@@ -10,7 +10,7 @@
 * Law can change greatly among countries
     * If you are not a lawyer, or you can’t pay a lawyer, **don’t come up with your own license**
     * A custom license is likely to be in *conflict* with the law of some countries
-    * Better choosing something *proven to work*
+    * Better to choose something *proven to work*
 
 ---
 
@@ -22,9 +22,10 @@
 
 ### Copyleft
 
-**Practice** (*not a legal right!*) in which *the creators surrenders some, but not all, rights* under copyright law.
+**Practice** (*not a legal right!*) in which *the creator surrenders some, but not all, rights* under copyright law.
 * *Strong*: all derived works inherit the copyleft license
-* *Weak*: some derived work may not inherit it
+* *Weak*: some derived works may not inherit it
+    * Whether *linking* produces a derived work is decided by the license itself!
 * *Full*: all the parts of the work are distributed under the terms of the copyleft license
 * *Partial*: only some parts are covered by the copyleft license.
 
@@ -36,11 +37,11 @@
 
 **Possession** of a copy of software.
 
-The possession *implies right to use*, even if such use implies a violation of the license (e.g. for making changes to the software, or making incidental copies).
+The possession *implies the right to use*, even if such use implies a violation of the license (e.g. for making changes to the software, or making incidental copies).
 
 ### Licensing
 
-The software is not sold, but merely “licensed”, namely **permitted to be used**, *under the conditions of a End-user license agreement* (EULA).
+The software is not sold, but merely “licensed”, namely **permitted to be used**, *under the conditions of an End-user license agreement* (EULA).
 
 ---
 
@@ -53,7 +54,7 @@ The software is not sold, but merely “licensed”, namely **permitted to be us
 #### Proprietary
 
 The software publisher grants the right to use *a certain number of copies under the conditions of an EULA*, but **does not transfer ownership** of the copies to the customer.
-Usage of the software may be subjected to acceptance of the EULA.
+Usage of the software may be subject to acceptance of the EULA.
 
 #### Free
 
@@ -67,7 +68,7 @@ The software publisher grants *extensive rights to modify and redistribute* the 
 
 ## Freedom: as in beer vs. as in speech
 
-Much easier for italian speakers:
+Much easier for Italian speakers:
 * free as in speech: *libero*
 * free as in beer: *gratuito*
 
@@ -78,7 +79,7 @@ Much easier for italian speakers:
 ### Free as in speech
 
 The user receives the *source code* of the software, is allowed to *modify* and *redistribute* it.
-* The user can be asked to *pay for receiving a copy*: it can be distributed behind a fee
+* The user can be asked to *pay for receiving a copy*: it can be distributed for a fee
 * The author can also ask for *additional money for accessing the source code*
     * but not "too much"
     * e.g., asking for a billion dollars would make the software de-facto proprietary.
@@ -95,7 +96,7 @@ Usually together, but:
 There are non-free open source licenses:
 * Apple Public source license 1.0 $\Rightarrow$ [too generic](https://www.gnu.org/licenses/license-list.html#apsl1)
 * Artistic License 1.0 $\Rightarrow$ overly vague
-* Nasa Open Source Agreement
+* NASA Open Source Agreement
 <!-- markdown-link-check-enable -->
 
 And there are free non-open source licenses as well
@@ -126,7 +127,7 @@ And there are free non-open source licenses as well
 * **Maintenance and support**: proprietary licenses usually include forms of maintenance and support
 * **Warranty**: proprietary licenses often include a warranty
     * Typically time limited
-    * Typically with purcheasable extensions
+    * Typically with purchasable extensions
 
 ---
 
@@ -134,10 +135,11 @@ And there are free non-open source licenses as well
 
 **GNU General Public License**
 * *Free and open source*
-* *Strong copyleft*: derived work must be released under a compatible license
+* *Strong copyleft*
+    * *Modified versions* must be released under a compatible license
+    * *Combined works* (linking) count as derived work $\Rightarrow$ also GPL
 * *Does not allow linking* from non GPL-compatible licensed software!
     * If you want your software to be used as a dependency of proprietary software, don’t use this license!
-
 
 ---
 
@@ -145,9 +147,11 @@ And there are free non-open source licenses as well
 
 **GNU Lesser General Public License (LGPL)**
 * A modification of the GPLv3 with a *linking exception*
-    * Not an entirely different license as the previous LGPL
+    * Not an entirely different license, unlike the previous LGPL
 * *Free and open source*
-* *Strong copyleft*: derived work must be released under a compatible license
+* *Weak copyleft*
+    * *Modified versions of the library* must be released under a compatible license
+    * *Combined works* (linking) *do not inherit* the LGPL, but inherit *some obligations*
 * *Allows linking* from code with a different license
 * *Work linking* the LGPL library (combined work) *must*:
     * *Allow modification of the original linked library* shipped with the work
@@ -161,7 +165,9 @@ And there are free non-open source licenses as well
 **GNU General Public License with linking exception**
 * Can be *built on top of a GPL*, by manually adding an exception for linking
 * *Free and open source*
-* *Strong copyleft*: derived work must be released under a compatible license
+* *Strong copyleft*, but on a *narrower scope*
+    * *Modified versions* must be released under a compatible license (as in GPL)
+    * *Combined works* (linking) are *carved out of the copyleft* by the exception
 * Allows linking from code with a different license without further restrictions
     * Combined work can be redistributed under non GPL-compatible licenses
 
@@ -178,6 +184,21 @@ is not derived from or based on this library. If you modify this library, you ma
 version of the library, but you are not obliged to do so. If you do not wish to do so, delete this exception
 statement from your version.
 ```
+
+---
+
+## Copyleft and linking: a summary
+
+|                             | Modified library           | Work that *links* the library                                |
+|-----------------------------|----------------------------|--------------------------------------------------------------|
+| **GPLv3**                   | must be GPL                | must be GPL (it *is* a derived work)                         |
+| **LGPLv3**                  | must be LGPL               | *any* license, **plus** relinking and reverse engineering duties |
+| **GPL + linking exception** | must be GPL                | *any* license, **no further duties**                         |
+
+* The *left* column is the same everywhere $\Rightarrow$ all three are copyleft on their own derivatives
+* The *right* column is what the *strong* / *weak* labels are about:
+    * *LGPL* weakens the *obligations* on the combined work $\Rightarrow$ **weak copyleft**
+    * *The exception* removes the combined work from the *scope* of copyleft, leaving full GPL strength inside it $\Rightarrow$ **strong copyleft**
 
 ---
 
@@ -232,7 +253,7 @@ as the name is changed.
 
 ---
 
-## FOSS Licence compatibility
+## FOSS License compatibility
 
 ![floss license network](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Floss-license-slide-image.svg/2560px-Floss-license-slide-image.svg.png)
 
@@ -250,16 +271,16 @@ good for data, documentation, and resources
 **Available rights**
 * `BY` (Attribution) -- Derivative works must credit the original author
 * `SA` (Share-alike) -- Enables copyleft
-* `NC` (Non-commercial) -- — Derivative work can only be used for non commercial purposes
+* `NC` (Non-commercial) -- Derivative work can only be used for non-commercial purposes
 * `ND` (No derivative Works) -- Free distribution and copy, but derivatives are forbidden
 
 **Valid combinations**
-* `CC0` -- Public domain (prefer the MIT licens for a similar protection)
+* `CC0` -- Public domain (prefer the MIT license for similar protection)
 * `CC-BY` -- Attribution
 * `CC-BY-SA` -- Attribution, Share-alike (enables copyleft)
 * `CC-BY-NC` -- Attribution Noncommercial
 * `CC-BY-NC-SA` -- As above, plus copyleft
-* `CC-BY-ND` -- Attribution Noderivatives (commercially usable, but not modifiable)
+* `CC-BY-ND` -- Attribution No Derivatives (commercially usable, but not modifiable)
 * `CC-BY-NC-ND` -- As above, non commercial
 
 
@@ -268,7 +289,7 @@ good for data, documentation, and resources
 # Applying a License
 
 1. Create a `LICENSE` or `COPYING` plain text file in the repository with the *full license* text
-    * Full text can be easy found online
+    * Full text can be easily found online
     * *Change the owner and the copyright year*
 2. Apply a **copyright notice header** to *every source file*
     * Use an automated tool to do it

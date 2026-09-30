@@ -2,13 +2,13 @@
 
 Documentation of a project is **part of the project**
 
-* **Documentation** must stay in the same repository of the project
+* **Documentation** must stay in the same repository as the project
 * However, it should be *accessible to non-developers*
 
 ### Meet GitHub Pages
 
 * GitHub provides an *automated* way to publish *webpages from **Markdown*** text
-* Markdown is a *human readable markup language*, [easy to learn](https://learnxinyminutes.com/docs/markdown/)
+* Markdown is a *human-readable markup language*, [easy to learn](https://learnxinyminutes.com/docs/markdown/)
   * These slides are written in Markdown
   * (generation is a bit richer, but just to make the point)
 * Supports *Jekyll* (a Ruby framework for static website generation) out of the box
@@ -24,14 +24,14 @@ Two possibilities:
     * Create an orphan branch with `git checkout --orphan <branchname>`
     * Write your website, one Markdown per page
     * Push the new branch
-1. Use a `docs/` folder in a root of some branch
+1. Use a `docs/` folder in the root of some branch
     * Could be `master` or any other branch
 
 ---
 
 ## Setting up a GitHub Pages website
 
-Once done, enable GitHub pages on the repository settings:
+Once done, enable GitHub Pages in the repository settings:
 
 ![Enable GitHub Pages snapshot](https://raw.githubusercontent.com/DanySK/shared-slides/6824b93d3d52b841386a744f57953a73ccb67378/ci/ghpages-enable.png)
 

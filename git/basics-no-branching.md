@@ -1,6 +1,6 @@
 ## Configuration
 
-Configuration in Git happens at two level
+Configuration in Git happens at two levels
 * **global**: the default options, valid system-wide
 * **repository**: the options specific to a repository. They have *precedence* over the global settings
 
@@ -58,7 +58,7 @@ Two reasonable choices are `main` and `master`
   * Do not nest repositories inside repositories, it is fragile
   * Nested projects are realized via *submodules* (not discussed in this course)
 * **Beware of the place where you issue the command!**
-  * First use `cd` to locate yourself inside the folder that contains (or will containe the project)
+  * First use `cd` to locate yourself inside the folder that contains (or will contain) the project
     * (possibly, first create the folder with `mkdir`)
   * **Then** issue `git init`
   * if something goes awry, you can delete the repository by deleting the `.git` folder.
@@ -70,9 +70,9 @@ Two reasonable choices are `main` and `master`
 Git has the concept of *stage* (or *index*).
 * Changes must be added to the stage to be committed.
 * Commits save the *__changes__ included in the stage*
-  * Files changed after being added to the stage neet to be re-staged
+  * Files changed after being added to the stage need to be re-staged
 * `git add <files>` moves the current state of the files into the stage as *changes*
-* `git reset <files>` removes currently staged *changes* of the files from stage
+* `git reset <files>` removes the currently staged *changes* of the files from the stage
 * `git commit` creates a new *changeset* with the contents of the stage
 
 ```mermaid
@@ -138,9 +138,9 @@ At the first commit, there is no branch and no `HEAD`.
 Depending on the version of Git, the following behavior may happen upon the first commit:
 * Git creates a *new branch* named `master`
   * *legacy behavior*
-  * the name is inherited from the default branch name in *Bitkeeper*
+  * the name is inherited from the default branch name in *BitKeeper*
 * Git creates a *new branch* named `master`, but warns that it is a deprecated behavior
-  * although coming from the Latin "*magister*" (teacher) and not from the "master/slave" model of asymmetric communication control, many recently prefer `main` as seen as more inclusive
+  * although coming from the Latin "*magister*" (teacher) and not from the "master/slave" model of asymmetric communication control, many now prefer `main`, as it is seen as more inclusive
 * Git refuses to commit until a default branch name is specified
   * *modern behavior*
   * Requires configuration: `git config --global init.defaultbranch default-branch-name`
@@ -193,8 +193,8 @@ bin/
 
 `git add someDeletedFile` is a correct command, that will stage the fact that `someDeletedFile` does not exist anymore, and its deletion must be registered at the next `commit`.
 
-* File *renaming* is *equivalent to file deletion and file creation* where, incidentally, the new file has the same content of the deleted file
-* To stage the rinomination of file `foo` into `bar`:
+* File *renaming* is *equivalent to file deletion and file creation* where, incidentally, the new file has the same content as the deleted file
+* To stage the renaming of file `foo` to `bar`:
   * `git add foo bar`
   * it records that `foo` has been deleted and `bar` has been created
   * Git is smart enough to understand that it is a name change, and will deal with it *efficiently*
@@ -209,7 +209,7 @@ Git provides a dedicated sub-command:
 `git log`
 
 * opens a *navigable interactive view* of the history from the `HEAD` commit (the current commit) backwards
-  * Press <kbd>Q</kbd>
+  * Press <kbd>Q</kbd> to quit
 * *compact* visualization: `git log --oneline`
 * visualization of *all branches*: `git log --all`
 * visualization of a lateral *graph*: `git log --graph`
@@ -252,7 +252,7 @@ In git, a reference to a commit is called `<tree-ish>`. Valid `<tree-ish>`es are
 
 It is possible to build *relative references*, e.g., "get me the commit before this `<tree-ish>`",
 by following the commit `<tree-ish>` with a tilde (`~`) and with the number of parents to get to:
-* `<tree-ish>~STEPS` where `STEPS` is an integer number produces a reference to the `STEPS-th` parent of the provided `<tree-ish>`:
+* `<tree-ish>~STEPS`, where `STEPS` is an integer, produces a reference to the `STEPS-th` parent of the provided `<tree-ish>`:
   * `b82f7567~1` references the *parent* of commit `b82f7567`.
   * `some_branch~2` refers to the *parent of the parent* of the last commit of branch `some_branch`.
   * `HEAD~3` refers to the *parent of the parent of the parent* of the current commit.
@@ -263,7 +263,7 @@ by following the commit `<tree-ish>` with a tilde (`~`) and with the number of p
     * The [`git rev-parse` reference on specifying revision](https://git-scm.com/docs/git-rev-parse#_specifying_revisions) is publicly available
     * A [much more readable explanation can be found on Stack overflow](https://stackoverflow.com/questions/2221658/what-is-the-difference-between-head-and-head-in-git/2222920#2222920)
 
-<!-- markdown-link-check-disable -->
+<!-- markdown-link-check-enable -->
 
 ---
 
@@ -274,9 +274,9 @@ We want to see which *differences* a commit introduced, or what we modified in s
 Git provides support to visualize the changes in terms of *modified lines* through `git diff`:
 * `git diff` shows the difference between the *stage* and the *working tree*
   * namely, what you would stage if you perform a `git add`
-* `git diff --staged` shows the difference between `HEAD` and the *working tree*
+* `git diff --staged` shows the difference between `HEAD` and the *stage*
 * `git diff <tree-ish>` shows the difference between `<tree-ish>` and the *working tree* (*stage excluded*)
-* `git diff --staged <tree-ish>` shows the difference between `<tree-ish>` and the *working tree*, *including staged changes*
+* `git diff --staged <tree-ish>` shows the difference between `<tree-ish>` and the *stage*
 * `git diff <from> <to>`, where `<from>` and `<to>` are `<tree-ish>`es, shows the differences between `<from>` and `<to>`
 
 ---
@@ -309,12 +309,12 @@ Still, *binary files are an issue*! Tracking the right files is paramount.
 
 Navigation of the history concretely means to move the head (in Git, `HEAD`) to arbitrary points of the history
 
-In Git, this is performed with the `checkout` commit:
+In Git, this is performed with the `checkout` command:
 * `git checkout <tree-ish>`
   * Unless there are changes that could get lost, *moves* `HEAD` to the provided `<tree-ish>`
   * Updates all tracked files to their version at the provided `<tree-ish>`
 
-The command can be used to selectively checkout a file from another revision:
+The command can be used to selectively check out a file from another revision:
 * `git checkout <tree-ish> -- foo bar baz`
   * Restores the status of files `foo`, `bar`, and `baz` from commit `<tree-ish>`, and adds them to the stage (unless there are uncommitted changes that could be lost)
   * Note that `--` is surrounded by whitespaces, it is not a `--foo` option, it is just used as a separator between the `<tree-ish>` and the list of files
@@ -325,7 +325,7 @@ The command can be used to selectively checkout a file from another revision:
 ## Detached head
 
 Git does **not** allow *multiple heads per branch*
-(other DVCS do, in particular Mercurial):
+(other DVCSs do, in particular Mercurial):
 for a commit to be valid, `HEAD` must be at the "end" of a branch (on its last commit), as follows:
 
 ```mermaid
@@ -364,8 +364,8 @@ flowchart RL
   class C1,C2,C3,C4,C5,C6,C7,C8,C9,C10 commit;
 ```
 
-The system enters a special workmode called *detached head*.
+The system enters a special mode called *detached head*.
 
-When **in detached head**, Git allows to make **commits**, but they **are lost**!
+When **in detached head**, Git lets you make **commits**, but they **are lost**!
 
 (Not really, but to retrieve them we need `git reflog` and `git cherry-pick`, that we won't discuss)

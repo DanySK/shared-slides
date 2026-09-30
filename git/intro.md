@@ -31,12 +31,12 @@ De-facto reference distributed version control system
 
 **Git is a command line tool**
 
-Although graphical interfaces exsist, it makes no sense to learn a GUI:
+Although graphical interfaces exist, it makes no sense to learn a GUI:
 * they are more prone to future changes than the CLI
 * they add a level of interposition between you and the tool
 * unless they are incomplete, they expose *more complexity* than what we can deal with in this course
   * what do you do with a checkbox labeled "squash when merging"?
-  * and what about *recursively checkout submodules*?
+  * and what about *recursively checking out submodules*?
 * as soon as you learn *the CLI*, you become so proficient that you get *slower* when there is a graphical interface in-between
 
 **I am assuming minimal knowledge of the shell, please let me know NOW if you've never seen it**

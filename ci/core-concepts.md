@@ -1,9 +1,9 @@
 
 # Core concepts
 
-Naming and organization is variable across platforms, but *in general*:
+Naming and organization are variable across platforms, but *in general*:
 
-* One or more **pipelines** can be associated to **events**
+* One or more **pipelines** can be associated with **events**
   * For instance, a *new commit*, an update to a *pull request*, or a *timeout*
 * Every pipeline is composed of a **sequence** of **operations**
 * Every **operation** could be composed of sequential or parallel **sub-operations**

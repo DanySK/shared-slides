@@ -1,12 +1,12 @@
 ## Going to a new line is more complicated than it seems
 
 Going to a new line is a two-phased operation:
-1. Bring the cursor back to the begin of the line
+1. Bring the cursor back to the beginning of the line
 2. Bring the cursor down one line
 
-In *electromechanic teletypewriters* (and in typewriters, too), they were two distinct operations:
+In *electromechanical teletypewriters* (and in typewriters, too), they were two distinct operations:
 1. *Carriage Return* (bringing the carriage to its leftmost position)
-2. *Line Feed* (rotating the carriage of one step)
+2. *Line Feed* (rotating the platen by one step)
 
 ---
 
@@ -14,7 +14,7 @@ In *electromechanic teletypewriters* (and in typewriters, too), they were two di
 
 ![teletypewriter](https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Telescrivente_CEP_-_Calcolatrice_Elettronica_Pisana.jpg/1080px-Telescrivente_CEP_-_Calcolatrice_Elettronica_Pisana.jpg)
 
-* driving them text without drivers required to *explicitly send* *carriage return* and *line feed* commands
+* driving them without drivers required *explicitly sending* *carriage return* and *line feed* commands
 
 ---
 
@@ -23,7 +23,7 @@ In *electromechanic teletypewriters* (and in typewriters, too), they were two di
 Terminals were designed to behave like virtual teletypewriters
 * Indeed, they are still called **TTY** (**T**ele**TY**pewriter)
 * In Unix-like systems, they are still implemented as *virtual devices*
-  * If you have MacOS X or Linux, you can see which virtual device backs your current terminal using `tty`
+  * If you have macOS or Linux, you can see which virtual device backs your current terminal using `tty`
 * At some point, Unix decided that `LF` was sufficient in virtual TTYs to go to a new line
   * Probably *inspired by the C language*, where `\n` means "newline"
   * The behaviour can still be disabled
@@ -38,13 +38,13 @@ we would get
 * Unix-like systems go to a new line with an `LF` character: `\n`
 * Old Mac systems used to go to a new line with a `CR` character: `\r`
   * Basically they decided to use a single character like Unix did, but made the opposite choice
-  * MacOS X is POSIX-compliant, uses `\n`
+  * macOS is POSIX-compliant, uses `\n`
 
 ---
 
 ## Newlines and version control
 
-If your team uses *multiple OSs*, it is likely that, by default, the text editors use either `LF` (on Unix) or `CRLF`
+If your team uses *multiple OSs*, it is likely that, by default, the text editors use either `LF` (on Unix) or `CRLF` (on Windows)
 
 It is also very likely that, upon saving, the whole file gets rewritten with the "*locally* correct" *line endings*
 

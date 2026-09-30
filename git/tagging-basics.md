@@ -1,6 +1,6 @@
 ## Associating symbolic names to commits
 
-It is often handful to associate some commits with a *symbolic name*,
+It is often handy to associate some commits with a *symbolic name*,
 most of the time to assign *versions*.
 * e.g., identify commit `8d400c0` as version `1.2.3`
 
@@ -100,10 +100,10 @@ Our version **moved**, *we never want this to happen*!
 
 ## Tagging
 
-The `tag` subcommand to create *permanent labels* attached to commits.
-Tags come in two fashions:
+The `tag` subcommand creates *permanent labels* attached to commits.
+Tags come in two flavours:
 * **Lightweight** *tags* are very similar to a "permanent branch": *pointers to commits that never change*
-* **Annotated** *tags*  (option `-a`) store additional information: a *message*, and, optionally, a *signature* (option `-s`/`-u`)
+* **Annotated** *tags* (option `-a`) store additional information: a *message*, and, optionally, a *signature* (option `-s`/`-u`)
 
 ```mermaid
 flowchart RL

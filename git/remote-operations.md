@@ -1,12 +1,12 @@
 ## Importing a repository
 
-* We can initialize an **emtpy** repository with `git init`
+* We can initialize an **empty** repository with `git init`
 * But most of the time we want to start from a *local copy* of an **existing** repository
 
 Git provides a `clone` subcommand that copies *the whole history* of a repository locally
 * `git clone URI destination` creates the folder `destination` and clones the repository found at `URI`
   * If `destination` is not empty, fails
-  * if `destination` is omitted, a folder with the same namen of the last segment of `URI` is created
+  * if `destination` is omitted, a folder with the same name as the last segment of `URI` is created
   * `URI` can be remote or local, Git supports the `file://`, `https://`, and `ssh` protocols
       * `ssh` *recommended* when available
 * The `clone` subcommand checks out the remote branch where the `HEAD` is attached (*default branch*)
@@ -23,7 +23,7 @@ Examples:
 
 ## Remotes
 
-* Remotes are the *known copies* of the repository that exist somewhere (usually in the Internet)
+* Remotes are the *known copies* of the repository that exist somewhere (usually on the Internet)
 * Each remote has a *name* and a *URI*
 * When a repository is created via `init`, no remote is known.
 * When a repository is imported via `clone`, a remote called `origin` is created automatically
@@ -35,7 +35,7 @@ The `remote` subcommand is used to inspect and manage remotes:
 
 * `git remote add a-remote URI` *adds* a new remote named `a-remote` and pointing to `URI`
 * `git remote show a-remote` displays *extended information* on `a-remote`
-* `git remote remove a-remote` *removes* `a-remote` (it does not delete information on the remote, it *locally* forgets that it exits)
+* `git remote remove a-remote` *removes* `a-remote` (it does not delete information on the remote, it *locally* forgets that it exists)
 
 ---
 
@@ -43,10 +43,10 @@ The `remote` subcommand is used to inspect and manage remotes:
 
 Remote branches can be *associated* with local branches, with the intended meaning that the local and the remote branch are *intended to be two copies of the same branch*
 
-* A remote branch associated to a local branch is its **upstream branch**
+* A remote branch associated with a local branch is its **upstream branch**
 * upstream branches can be configured via `git branch --set-upstream-to=remote/branchName`
   * e.g.: `git branch --set-upstream-to=origin/develop` sets the current branch upstream to `origin/develop`
-* When a repository is initialize by `clone`, its default branch is checked out locally with the same name it has on the remote, and the remote branch is automatically set as *upstream*
+* When a repository is initialized by `clone`, its default branch is checked out locally with the same name it has on the remote, and the remote branch is automatically set as *upstream*
 
 ---
 
@@ -110,7 +110,7 @@ class C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,CL1,CL2,CL3,CL4,CL5,CL6,CL7,CL8
 
 ## Importing remote branches
 
-`git branch` (or `git checkout -b`) can checkout remote branches locally *once they have been fetched*.
+`git branch` (or `git checkout -b`) can check out remote branches locally *once they have been fetched*.
 
 ```mermaid
 flowchart RL
@@ -219,7 +219,7 @@ class C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,CL1,CL2,CL3,CL4,CL5,CL6,CL7,CL8
 
 * It is customary to reuse the upstream name if there are no conflicts
   * `git checkout -b feat/new-client origin/feat/new-client`
-* Modern versions of Git automatically checkout remote branches if there are no ambiguities:
+* Modern versions of Git automatically check out remote branches if there are no ambiguities:
   * `git checkout feat/new-client`
   * creates a new branch `feat/new-client` with the upstream branch set to `origin/feat/new-client` if:
     * there is **no** *local branch* named `feat/new-client`
@@ -249,7 +249,7 @@ subgraph somesite.com/repo.git
   HEAD --"fas:fa-link"--o master
 end
 
-subgraph somewherelse.org/repo.git
+subgraph somewhereelse.org/repo.git
   direction RL
 
   masterl(master)
@@ -263,7 +263,7 @@ subgraph somewherelse.org/repo.git
   HEADL --"fas:fa-link"--o masterl
 end
 
-class local,somesite.com/repo.git,somewherelse.org/repo.git repo;
+class local,somesite.com/repo.git,somewhereelse.org/repo.git repo;
 class origin remote;
 class HEAD,HEADL head;
 class master,masterl,bug22,serverless,imported branch;
@@ -295,7 +295,7 @@ subgraph somesite.com/repo.git
   HEAD --"fas:fa-link"--o master
 end
 
-subgraph somewherelse.org/repo.git
+subgraph somewhereelse.org/repo.git
   direction RL
 
   masterl(master)
@@ -328,7 +328,7 @@ end
 
 origin ==o somesite.com/repo.git
 
-class local,somesite.com/repo.git,somewherelse.org/repo.git repo;
+class local,somesite.com/repo.git,somewhereelse.org/repo.git repo;
 class origin remote;
 class HEAD,HEADL,HEADa head;
 class master,masterl,mastera,bug22,serverless,imported branch;
@@ -360,7 +360,7 @@ subgraph somesite.com/repo.git
   HEAD --"fas:fa-link"--o master
 end
 
-subgraph somewherelse.org/repo.git
+subgraph somewhereelse.org/repo.git
   direction RL
 
   masterl(master)
@@ -398,7 +398,7 @@ end
 
 origin ==o somesite.com/repo.git
 
-class local,somesite.com/repo.git,somewherelse.org/repo.git repo;
+class local,somesite.com/repo.git,somewhereelse.org/repo.git repo;
 class origin remote;
 class HEAD,HEADL,HEADa head;
 class master,masterl,mastera,bug22,serverless,serverlessa,imported branch;
@@ -430,7 +430,7 @@ subgraph somesite.com/repo.git
   HEAD --"fas:fa-link"--o master
 end
 
-subgraph somewherelse.org/repo.git
+subgraph somewhereelse.org/repo.git
   direction RL
 
   masterl(master)
@@ -468,9 +468,9 @@ subgraph local
 end
 
 origin ==o somesite.com/repo.git
-other ==o somewherelse.org/repo.git
+other ==o somewhereelse.org/repo.git
 
-class local,somesite.com/repo.git,somewherelse.org/repo.git repo;
+class local,somesite.com/repo.git,somewhereelse.org/repo.git repo;
 class origin,other remote;
 class HEAD,HEADL,HEADa head;
 class master,masterl,mastera,bug22,serverless,serverlessa,imported branch;
@@ -502,7 +502,7 @@ subgraph somesite.com/repo.git
   HEAD --"fas:fa-link"--o master
 end
 
-subgraph somewherelse.org/repo.git
+subgraph somewhereelse.org/repo.git
   direction RL
 
   masterl(master)
@@ -544,9 +544,9 @@ subgraph local
 end
 
 origin ==o somesite.com/repo.git
-other ==o somewherelse.org/repo.git
+other ==o somewhereelse.org/repo.git
 
-class local,somesite.com/repo.git,somewherelse.org/repo.git repo;
+class local,somesite.com/repo.git,somewhereelse.org/repo.git repo;
 class origin,other remote;
 class HEAD,HEADL,HEADa head;
 class master,masterl,mastera,bug22,serverless,serverlessa,imported,othermaster branch;
@@ -558,19 +558,19 @@ class C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C1a,C2a,C3a,C4a,C5a,C6a,C7a,C8a
 ## Multiple remotes
 
 You can operate with *multiple remotes*! Just remember: *branch names* must be *unique* for every repository
-  * If you want to track `origin/master` and `anotherRemote/master`, you need *two local branches* with *diverse names*
+  * If you want to track `origin/master` and `anotherRemote/master`, you need *two local branches* with *different names*
 
 ---
 
 ## Fetching updates
 
-To check if a *remote* has any *update* available, git provides th `git fetch` subcommand.
+To check if a *remote* has any *update* available, git provides the `git fetch` subcommand.
 * `git fetch a-remote` checks if `a-remote` has any new information. If so, it downloads it.
   * **Note**: *it does **not** merge* it anywhere, it just memorizes its current status
 * `git fetch` without a remote:
   * if `HEAD` is *attached* and the *current branch* has an *upstream*, then the *remote* that is hosting the *upstream branch* is fetched
   * otherwise, `origin` is fetched, if present
-* To apply the updates, is then necessary to use *manually* use `merge`
+* To apply the updates, it is then necessary to *manually* use `merge`
 
 The new *information fetched* includes new *commits*, *branches*, and *tags*.
 
@@ -731,7 +731,7 @@ If there had been no updates locally, we would have experienced a *fast-forward*
 ## `git pull`
 
 *Fetching* the remote with the upstream branch and then *merging* is *extremely common*,
-so common that there is a special subcommand that operates.
+so common that there is a special subcommand that does both.
 
 `git pull` is equivalent to `git fetch && git merge FETCH_HEAD`
 * `git pull remote` is the same as `git fetch remote && git merge FETCH_HEAD`
@@ -747,7 +747,7 @@ still, it is important to understand that *it is not a primitive operation*
 Git provides a way to *send* changes to a remote: `git push remote branch`
 * sends the current branch changes to `remote/branch`, and updates the remote `HEAD`
 * if the branch or the remote is omitted, then the *upstream* branch is used
-    * the upstream branch can be (re)set at push time using `-u` or `--set-upstream-to`
+    * the upstream branch can be (re)set at push time using `-u` or `--set-upstream-to=remote/branch`
         * e.g.,: `git push -u myremote myremotebranch` sets the upstream branch of the current branch to `myremote/myremotebranch`
 * `push` *requires writing rights to the remote repository*
 * `push` *fails* if the pushed branch is not a *descendant* of the destination branch, which means:

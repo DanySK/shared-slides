@@ -64,7 +64,7 @@ an explicit `checkout` is required.
 
 ## Creating branches when in **DETACHED_HEAD**
 
-Creating new branches allows to store changes made when we are in **DETACHED_HEAD** state.
+Creating new branches allows changes made in the **DETACHED_HEAD** state to be stored.
 
 ```mermaid
 flowchart RL
@@ -343,11 +343,11 @@ flowchart RL
   class C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13 commit;
 ```
 
-* We want `new-experiment` to also have the changes from `C7`, to `C10` (to be up to date with `master`)
+* We want `new-experiment` to also have the changes from `C7` to `C10` (to be up to date with `master`)
 * `master` contains all the commits of `new-experiment`
-* We don't really need a merge commit, we can just move `new-experiment` to point it to `C6`
+* We don't really need a merge commit, we can just move `new-experiment` to point it to `C10`
 * $\Rightarrow$ This is called a **fast-forward**
-  * It is the *default behavior* in Git when merging branches where the target is the head plus something
+  * It is the *default behavior* in Git when merging a branch whose target is a descendant of the current head
 
 {{% fragment %}}
 
@@ -380,7 +380,7 @@ Git tries to resolve most conflicts by *itself*
 * It's *pretty good* at it
 * but things can still require *human intervention*
 
-In case of conflict on one or more files, Git marks the subject files as *conflicted*, and modifies them adding *merge markers*:
+In case of conflict on one or more files, Git marks the subject files as *conflicted*, and modifies them by adding *merge markers*:
 
 ```text
 <<<<<<< HEAD
@@ -395,7 +395,7 @@ Changes made on the branch that is being merged in.
 * The (now fixed) files should get added to the stage with `git add`
 * The merge operation can be concluded through `git commit`
   * In case of merge, the message is pre-filled in
-  * If the message is okay, `git commit --no-edit` can be used to use it without editing
+  * If the message is okay, `git commit --no-edit` accepts it without opening an editor
 
 ---
 
@@ -406,12 +406,12 @@ Changes made on the branch that is being merged in.
 Although they are unavoidable in some cases, they can be *minimized* by following a few *good practices*:
 
 * **Do not** *track files that can be generated*
-  * This is harmful under many points of view, and merge conflicts are one
+  * This is harmful in many ways, and merge conflicts are one
 * **Do** *make many small commits*
   * Each coherent change should be reified into a commit
-  * Even very small changes, like modification of the whitespaces
+  * Even very small changes, like whitespace changes
   * Smaller commits help Git better figure out what changed and in which order,
-  generally leading to finer grained (and easier to solve) conflicts
+  generally leading to finer-grained (and easier to solve) conflicts
 * **Do** *enforce style rules* across the team
   * Style changes are legitimate changes
   * Style is often enforced at the IDE level

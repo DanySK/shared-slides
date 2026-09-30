@@ -1,6 +1,6 @@
 ## Dependencies in software
 
-> nos esse quasi nanos gigantium humeris insidentes
+> nos esse quasi nanos gigantum humeris insidentes
 <cite>Bernard of Chartres</cite>
 
 All modern software depends on other software!
@@ -38,7 +38,7 @@ We need a tool that can:
 * *Download* them (if found)
 * Include them into a discoverable path
 
-To do this, however, we need to know some repositories and how to refer and locate artifacts
+To do this, however, we need to know some repositories and how to refer to and locate artifacts
 * We need a *name* and a *version* for each library
 * There is no standard, **every ecosystem has its own conventions**
     * Some created with the programming language (e.g., Rust)
@@ -110,7 +110,7 @@ to a known good set.
 
 #### There is a trade-off between flexibility and reproducibility!
 
-**exact pins** trade *low maintenance risk* for *high ongoing cost* and *poor ecosystem fit*:
+**Exact pins** trade *low maintenance risk* for *high ongoing cost* and *poor ecosystem fit*:
 * Libraries become uncomposable. If two libs pin different exact transitives, resolvers can’t find a common graph
 * Pins don’t freeze transitives anyway. Without a lock you still get drift downstream
 
