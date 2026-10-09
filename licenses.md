@@ -255,7 +255,7 @@ as the name is changed.
 
 ## FOSS License compatibility
 
-![floss license network](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Floss-license-slide-image.svg/2560px-Floss-license-slide-image.svg.png)
+![floss license network](https://upload.wikimedia.org/wikipedia/commons/2/2b/Floss-license-slide-image.svg)
 
 ---
 
