@@ -15,7 +15,7 @@ Tutto il software moderno dipende da altro software!
 * librerie di terze parti (fra poco)
 * risorse esterne (icone, suoni, dati applicativi)
 
-Tutto il software che costruiamo e usiamo dipende da *altro sofware*
+Tutto il software che costruiamo e usiamo dipende da *altro software*
 * Che dipende da *altro software*
   * Che dipende da *altro software*
     * Che dipende da *altro software*
