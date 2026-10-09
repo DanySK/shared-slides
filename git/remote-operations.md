@@ -748,7 +748,7 @@ Git provides a way to *send* changes to a remote: `git push remote branch`
 * sends the current branch changes to `branch` on `remote`, moving the remote branch forward (and updating `remote/branch` locally)
 * if the branch or the remote is omitted, then the *upstream* branch is used
     * the upstream branch can be (re)set at push time using `-u` or `--set-upstream-to=remote/branch`
-        * e.g.,: `git push -u myremote myremotebranch` sets the upstream branch of the current branch to `myremote/myremotebranch`
+        * e.g., `git push -u myremote myremotebranch` sets the upstream branch of the current branch to `myremote/myremotebranch`
 * `push` *requires writing rights to the remote repository*
 * `push` *fails* if the pushed branch is not a *descendant* of the destination branch, which means:
   * the destination branch has *work that is not present* in the local branch
