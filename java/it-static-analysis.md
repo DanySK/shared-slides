@@ -88,10 +88,6 @@ plugins {
 di default, questo causa un fallimento della build se ci sono errori in analisi statica:
 * la configurazione è *aggressiva*.
 
-* Plugin
-* Aggressività
-* Build reports
-
 ---
 
 ## Falsi positivi e falsi negativi
