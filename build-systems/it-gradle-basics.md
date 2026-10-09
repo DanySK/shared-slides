@@ -104,7 +104,7 @@ Gradle contiene diversi plugin pronti all'uso
 
 ### Task
 
-Un **task** in Gradle rappresenta una *singola operazione atomica* del processo di costruzione del sofware
+Un **task** in Gradle rappresenta una *singola operazione atomica* del processo di costruzione del software
 * *singola* $\rightarrow$ un task fa una sola cosa (Single Responsibility Principle)
 * *atomica* $\rightarrow$ indivisibile: un task comincia e finisce senza interruzione
 
