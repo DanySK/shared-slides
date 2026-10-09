@@ -159,7 +159,7 @@ Ora sappiamo come si chiamano, ma non dove trovarle...
 
 ---
 
-## The Maven Central Repository (a.k.a. Sonatype OSSRH)
+## The Maven Central Repository
 
 Assieme alla convenzione per i nomi,
 Maven definì un *repository* (archivio) dove i creatori di software Java *open source* potessero:
