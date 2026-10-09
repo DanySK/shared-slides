@@ -145,7 +145,7 @@ Una libreria Java in formato compatibile con Maven si compone di:
     * ad esempio: `it.unibo`, `com.google`, `io.github`
 * **artifactId**: identifica una specifica *libreria* o *modulo di progetto*
   * È un nome semplice in kebab-case
-    * ad esempio: `commons-math`, `guava`, `junit-jupiter-assertions-jvm`
+    * ad esempio: `commons-math`, `guava`, `junit-jupiter-api`
 * **version**: identifica una specifica *versione* di una libreria
   * possono essere numeri o lettere separati da `.`, `-`, o `+` (solitamente numeri e punti)
     * ad esempio: `1.0`, `1.0.1`, `2.3.5-beta4`, `28ae10dd`, `4.0.2-alpha+28ae10dd`
