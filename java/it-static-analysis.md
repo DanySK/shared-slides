@@ -21,7 +21,7 @@ e garantisce uniformità fra le parti sviluppate da persone diverse
 
 ### Code checking
 
-I software che vedremo sono eseguibili in due modalità:
+I software che vedremo sono eseguibili in tre modalità:
 
 * *Stand-alone*: il software viene eseguito e genera un report
 * Come *plug-in*: il software viene integrato con l'IDE (ad es. VS Code), e segnala i problemi sotto forma di warning
