@@ -208,7 +208,7 @@ In Gradle è possibile "puntare" ad archivi di librerie specificandolo in un blo
 
 Per dire a Gradle di:
 1. Preparare il necessario per gestire un progetto Java
-2. Configurare Maven Central come *repository* per le eventuali liberie
+2. Configurare Maven Central come *repository* per le eventuali librerie
 
 è sufficiente configurare `build.gradle.kts` come segue:
 
