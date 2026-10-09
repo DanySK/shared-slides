@@ -745,7 +745,7 @@ still, it is important to understand that *it is not a primitive operation*
 ## Sending local changes
 
 Git provides a way to *send* changes to a remote: `git push remote branch`
-* sends the current branch changes to `remote/branch`, and updates the remote `HEAD`
+* sends the current branch changes to `branch` on `remote`, moving the remote branch forward (and updating `remote/branch` locally)
 * if the branch or the remote is omitted, then the *upstream* branch is used
     * the upstream branch can be (re)set at push time using `-u` or `--set-upstream-to=remote/branch`
         * e.g.,: `git push -u myremote myremotebranch` sets the upstream branch of the current branch to `myremote/myremotebranch`
