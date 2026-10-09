@@ -338,7 +338,7 @@ To be able to go *back in time* or *change branch*, we need to **refer to commit
 
 ### Absolute and relative references
 
-Appending `~` and a number `i` to a valid tree-ish means "`i-th` parent of this tree-ish"
+Appending `~` and a number `i` to a valid tree-ish means "the `i`-th ancestor of this tree-ish" (going back `i` generations, following the first parent)
 
 ```mermaid
 %%{init: { 'gitGraph': { 'mainBranchName': 'master', 'showCommitLabel': false}} }%%
