@@ -152,7 +152,7 @@ Una libreria Java in formato compatibile con Maven si compone di:
     * tipicamente (ma non sempre) le versioni con soli numeri e punti sono *stabili*
 
 Per riferirsi ad una libreria specifica, si usa la sintassi: `groupId:artifactId:version`
-* `com.google.guava:guava:32-jre`
+* `com.google.guava:guava:33.4.0-jre`
 * `it.unibo.alchemist:alchemist-api:25.0.1`
 
 Ora sappiamo come si chiamano, ma non dove trovarle...
