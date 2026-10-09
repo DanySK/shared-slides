@@ -113,7 +113,7 @@ Qualunque esecuzione di Gradle richiede di specificare uno o più **task**, ad e
 * `gradle tasks --all` (elenca tutti i task disponibili)
 * `gradle compileJava` (compila i sorgenti java)
 
-Gradle è in grado capire le *dipendenze* fra task ed eseguirli nell'ordine corretto.
+Gradle è in grado di capire le *dipendenze* fra task ed eseguirli nell'ordine corretto.
 
 ---
 
