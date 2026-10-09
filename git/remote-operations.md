@@ -905,7 +905,7 @@ class C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,CL1,CL2,CL3,CL4,CL5,CL6,CL7,CL8
 ```
 
 * Everything okay! `origin/master` was a *subset* of `master`
-* The remote `HEAD` can be *fast-forwarded*
+* The remote `master` can be *fast-forwarded*
 
 ➡️ Next: someone else pushes a change ➡️
 
