@@ -50,7 +50,7 @@ un percorso su cui l'utente abbia diritto di scrittura e lavorare su quella copi
 #### Caricamento di File
 
 ```java
-final InputStream in = ClassLoader.getSystemResourceAsStream("/settings/settings");
+final InputStream in = ClassLoader.getSystemResourceAsStream("settings/settings");
 final BufferedReader br = new BufferedReader(new InputStreamReader(in));
 final String line = br.readLine();
 in.close();
@@ -59,7 +59,7 @@ in.close();
 #### Caricamento di Immagini
 
 ```java
-final URL imgURL = ClassLoader.getSystemResource("/images/gandalf.jpg");
+final URL imgURL = ClassLoader.getSystemResource("images/gandalf.jpg");
 final ImageIcon icon = new ImageIcon(imgURL);
 final JLabel lab1 = new JLabel(icon);
 ```
