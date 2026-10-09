@@ -477,11 +477,11 @@ class master,masterl,mastera,bug22,serverless,serverlessa,imported branch;
 class C1,C2,C3,C4,C5,C6,C7,C8,C9,C10,C11,C12,C13,C1a,C2a,C3a,C4a,C5a,C6a,C7a,C8a,C9a,C10a,C11a,C12a,C13a,CL1,CL2,CL3,CL4,CL5,CL6,CL7,CL8,CL9,CL10,CL11,CL12,CL13 commit;
 ```
 
-➡️ Next: `git checkout -b other-master other/master` ➡️
+➡️ Next: `git fetch other && git checkout -b other-master other/master` ➡️
 
 ---
 
-⬇️ `git checkout -b other-master other/master` ⬇️
+⬇️ `git fetch other && git checkout -b other-master other/master` ⬇️
 
 ```mermaid
 flowchart RL
