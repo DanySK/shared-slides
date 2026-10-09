@@ -133,17 +133,16 @@ Changes not staged for commit:
 
 ## Default branch
 
-At the first commit, there is no branch and no `HEAD`.
+Upon `git init`, `HEAD` is attached to a branch that does not exist yet (an *unborn* branch):
+the branch is actually created by the first commit.
 
-Depending on the version of Git, the following behavior may happen upon the first commit:
-* Git creates a *new branch* named `master`
-  * *legacy behavior*
+The name of this branch is decided at `git init` time:
+* if `init.defaultBranch` is configured, its value is used
+* otherwise, Git 2.x uses `master`, and prints a hint suggesting to configure a name
   * the name is inherited from the default branch name in *BitKeeper*
-* Git creates a *new branch* named `master`, but warns that it is a deprecated behavior
   * although coming from the Latin "*magister*" (teacher) and not from the "master/slave" model of asymmetric communication control, many now prefer `main`, as it is seen as more inclusive
-* Git refuses to commit until a default branch name is specified
-  * *modern behavior*
-  * Requires configuration: `git config --global init.defaultbranch default-branch-name`
+  * Git 3.0 will switch the default to `main`
+* Recommended: configure it explicitly with `git config --global init.defaultBranch default-branch-name`
 
 ---
 
