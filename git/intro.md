@@ -15,7 +15,7 @@ De-facto reference distributed version control system
 * Very *fast*
   * At conception, 10 times faster than Mercurial¹, 100 times faster than Bazaar
 
-¹ Less difference now, Facebook vastly improved Mercurial
+¹ The gap later narrowed, as Facebook (now Meta) vastly improved Mercurial
 
 ---
 
