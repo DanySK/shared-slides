@@ -11,7 +11,7 @@
 Tutto il software moderno dipende da altro software!
 * il sistema operativo
 * il *runtime environment* (la Java Virtual Machine)
-* le librerie di basa (tutto quello che sta in `java.*` e `javax.*`)
+* le librerie di base (tutto quello che sta in `java.*` e `javax.*`)
 * librerie di terze parti (fra poco)
 * risorse esterne (icone, suoni, dati applicativi)
 
