@@ -315,7 +315,8 @@ In Git, this is performed with the `checkout` command:
 
 The command can be used to selectively check out a file from another revision:
 * `git checkout <tree-ish> -- foo bar baz`
-  * Restores the status of files `foo`, `bar`, and `baz` from commit `<tree-ish>`, and adds them to the stage (unless there are uncommitted changes that could be lost)
+  * Restores the status of files `foo`, `bar`, and `baz` from commit `<tree-ish>`, and adds them to the stage
+  * **Warning**: uncommitted changes to those files are overwritten *without asking*, and lost!
   * Note that `--` is surrounded by whitespaces, it is not a `--foo` option, it is just used as a separator between the `<tree-ish>` and the list of files
     * the files could be named as a `<tree-ish>` and we need disambiguation
 
