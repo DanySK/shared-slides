@@ -41,7 +41,7 @@ public abstract class ClassLoader {
     * Per esempio, se la risorsa è dentro un JAR, non è possibile modificarla "dentro" il JAR
 * Se si ha la necessità di modificare una risorsa, è necessario copiarla in
 un percorso su cui l'utente abbia diritto di scrittura e lavorare su quella copia
-    * Tipicamente, una cartella nascosta nella la home utente: `System.getProperty("user.home")`
+    * Tipicamente, una cartella nascosta nella home utente: `System.getProperty("user.home")`
 
 ---
 
