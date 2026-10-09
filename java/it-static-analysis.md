@@ -38,11 +38,11 @@ SpotBugs scansiona il *bytecode* generato dal compilatore, e dalla sua analisi c
 
 * Uguaglianza esatta fra `float` o `double`
 * Utilizzo di `==` invece di `equals()`
-* Mancata annotazione di annotazioni usate a runtime via reflection
+* Uso via reflection di annotazioni senza retention `RUNTIME`
 * Uso errato di meccanismi di sincronizzazione
 * Assenza di copie difensive
 * Variabili non utilizzate
-* Vulnerabilità  di sicurezza
+* Vulnerabilità di sicurezza
 * Tanti altri! Si veda: [https://spotbugs.readthedocs.io/en/stable/bugDescriptions.html](https://spotbugs.readthedocs.io/en/stable/bugDescriptions.html)
 
 ---
