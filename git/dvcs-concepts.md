@@ -528,5 +528,5 @@ flowchart RL
 **Notice that:**
 * we have two branches
 * `8` is a merge commit, as it has two parents: `7` and `5`
-* the situation is the same regardless that is a *single developer going back on the development* or *multiple developers working in parallel*!
+* the situation is the same regardless of whether it is a *single developer going back on the development* or *multiple developers working in parallel*!
 * this is possible because *every copy of the repository contains the entire history*!
