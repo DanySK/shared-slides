@@ -35,7 +35,7 @@ Dato che il wrapper sa come scaricare ed installare Gradle, non occorre scaricar
 
 ## Progetti Gradle con wrapper
 
-1. Script bash eseguibile (<i class="fab fa-linux"></i>/<i class="fab fa-apple"></i>): `gradlew`
+1. Script shell (POSIX `sh`) eseguibile (<i class="fab fa-linux"></i>/<i class="fab fa-apple"></i>): `gradlew`
 2. Script batch eseguibile (<i class="fab fa-windows"></i>): `gradlew.bat`
 3. File di configurazione con indicata la versione di Gradle:<br>
 `gradle/wrapper/gradle-wrapper.properties`
