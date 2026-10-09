@@ -251,7 +251,7 @@ In git, a reference to a commit is called `<tree-ish>`. Valid `<tree-ish>`es are
 
 It is possible to build *relative references*, e.g., "get me the commit before this `<tree-ish>`",
 by following the commit `<tree-ish>` with a tilde (`~`) and with the number of parents to get to:
-* `<tree-ish>~STEPS`, where `STEPS` is an integer, produces a reference to the `STEPS-th` parent of the provided `<tree-ish>`:
+* `<tree-ish>~STEPS`, where `STEPS` is an integer, produces a reference to the `STEPS-th` ancestor of the provided `<tree-ish>`:
   * `b82f7567~1` references the *parent* of commit `b82f7567`.
   * `some_branch~2` refers to the *parent of the parent* of the last commit of branch `some_branch`.
   * `HEAD~3` refers to the *parent of the parent of the parent* of the current commit.
