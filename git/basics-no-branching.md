@@ -114,7 +114,7 @@ Changes not staged for commit:
 
 ## Committing
 
-* Requires an **author** and an **email**
+* Requires an author **name** and an **email**
   * They can be configured *globally* (at the *computer level*):
     * `git config --global user.name 'Your Real Name'`
     * `git config --global user.email 'your@email.com'`
