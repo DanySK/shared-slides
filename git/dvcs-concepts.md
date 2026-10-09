@@ -384,7 +384,7 @@ Moves the `HEAD` to the specified *target tree-ish*
 
 ## Project evolution example
 
-Let us try to see what happens when ve develop some project, step by step.
+Let us try to see what happens when we develop some project, step by step.
 
 ---
 
