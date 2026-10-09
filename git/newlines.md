@@ -12,7 +12,7 @@ In *electromechanical teletypewriters* (and in typewriters, too), they were two 
 
 ## A teletypewriter
 
-![teletypewriter](https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Telescrivente_CEP_-_Calcolatrice_Elettronica_Pisana.jpg/1080px-Telescrivente_CEP_-_Calcolatrice_Elettronica_Pisana.jpg)
+![teletypewriter](https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Telescrivente_CEP_-_Calcolatrice_Elettronica_Pisana.jpg/1280px-Telescrivente_CEP_-_Calcolatrice_Elettronica_Pisana.jpg)
 
 * driving them without drivers required *explicitly sending* *carriage return* and *line feed* commands
 
