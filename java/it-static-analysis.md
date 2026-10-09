@@ -187,7 +187,7 @@ E quindi, in `build.gradle.kts`
 
 ```kotlin
 dependencies {
-    compileOnly("com.github.spotbugs:spotbugs-annotations:4.7.3") // Use the latest version
+    compileOnly("com.github.spotbugs:spotbugs-annotations:4.10.3") // Use the latest version
 }
 ```
 
