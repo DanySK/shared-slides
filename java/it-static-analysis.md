@@ -55,7 +55,7 @@ PMD si occupa di trovare imperfezioni nel codice:
 * Mancato uso di final
 * Singular fields
 * Integra CPD (copy/paste detector) per verificare se vi siano blocchi di codice copincollati
-* Tanti altri! Si veda: [https://pmd.github.io/latest/pmd_rules_java.html](https://pmd.github.io/latest/pmd_rules_java.html)
+* Tanti altri! Si veda: [https://docs.pmd-code.org/latest/pmd_rules_java.html](https://docs.pmd-code.org/latest/pmd_rules_java.html)
 
 ---
 
@@ -67,7 +67,7 @@ Cos'è: Checkstyle si occupa di trovare errori di stile:
 * Spaziature non corrette
 * Parentesi assenti
 * Magic numbers
-* Altro: [http://checkstyle.sourceforge.net/checks.html](http://checkstyle.sourceforge.net/checks.html)
+* Altro: [https://checkstyle.org/checks.html](https://checkstyle.org/checks.html)
 
 ---
 
