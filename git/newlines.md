@@ -25,8 +25,8 @@ Terminals were designed to behave like virtual teletypewriters
 * In Unix-like systems, they are still implemented as *virtual devices*
   * If you have macOS or Linux, you can see which virtual device backs your current terminal using `tty`
 * At some point, Unix decided that `LF` was sufficient in virtual TTYs to go to a new line
-  * Probably *inspired by the C language*, where `\n` means "newline"
-  * The behaviour can still be disabled
+  * A choice inherited from *Multics*, which already used `LF` alone as newline (and adopted by C, where `\n` means "newline")
+  * The terminal translates `LF` into `CR`+`LF` on output, but the behaviour can still be disabled (`stty -onlcr`), in which case
 ```text
 we would get
             lines
