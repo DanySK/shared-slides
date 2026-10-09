@@ -1,7 +1,7 @@
 ## Configuration
 
 Configuration in Git happens at two levels
-* **global**: the default options, valid system-wide
+* **global**: the default options of the current user, valid for all their repositories
 * **repository**: the options specific to a repository. They have *precedence* over the global settings
 
 ### Strategy
