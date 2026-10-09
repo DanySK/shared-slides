@@ -84,17 +84,17 @@ They *enrich* the base git model with services built around the tool:
 You are strongly encouraged to learn how it works and [the best security practices](https://archive.ph/3Pn0L).
 
 1. If you don't already have one, generate a new key pair
-    * `ssh-keygen`
+    * `ssh-keygen -t ed25519`
     * You can confirm the default options
     * You can pick an empty password
         * <i class="fa-solid fa-arrow-up"></i> your private key will be stored *unencrypted* on your file system
         * please understand the associated security issues, if you don't, use a password.
 2. Obtain your **public key**
-    * `cat ~/.ssh/id_rsa.pub`
-        * If you get an error "No such file or directory", try: `cat ~/.ssh/id_ed25519.pub`
+    * `cat ~/.ssh/id_ed25519.pub`
+        * If you get an error "No such file or directory" and you had an older RSA key, try: `cat ~/.ssh/id_rsa.pub`
     * Looks something like:
     ```text
-    ssh-rsa AAAAB3Nza<snip, a lot of seemingly random chars>PIl+qZfZ9+M= you@your_hostname
+    ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAI<snip, a lot of seemingly random chars> you@your_hostname
     ```
 3. Create a new key at https://github.com/settings/ssh/new
     * Provide a title that allows you to identify the key
