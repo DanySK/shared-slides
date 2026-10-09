@@ -24,7 +24,7 @@ public abstract class ClassLoader {
   // ...
 ```
 
-* Un **class loader** (istanza di `ClassLoader`) è un'oggetto responsabile del *caricamento di classi e risorse*
+* Un **class loader** (istanza di `ClassLoader`) è un oggetto responsabile del *caricamento di classi e risorse*
     * ogni class loader ha un class loader padre, per sfruttare un meccanismo di delega
     * il parent di default è il **system class loader** che carica classi e risorse *dal classpath*
 * Una **risorsa di sistema** (system resource) è una risorsa "built-in" del sistema software, oppure disponibile nel sistema host (ad es. nel filesystem locale)
