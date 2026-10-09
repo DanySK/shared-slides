@@ -63,7 +63,7 @@ developers work on a subset of such history
 * **Apache Subversion (SVN)** (2000): successor to CVS, still largely used (especially in businesses that struggle to modernise their processes). *Centralized* model (similar to CVS). Improved binary file management. Improved concurrency for operations, though still cumbersome for parallel workflows.
 * **Mercurial** and **Git** (both April 2005): *decentralized* version control systems (DVCSs), no "special" copy of the repository, each client stores the whole history. Highly scalable. Foster parallel work by allowing easy branching and merging. Very similar conceptually (when two successful tools emerge at the same time with a similar model independently, it is an indication that the underlying model is "the right one" for the context).
 
-**Git** is now the dominant DVCS (most of former flaship Mercurial users -- Python, OpenJDK, Meta -- have since moved away).
+**Git** is now the dominant DVCS (most of former flagship Mercurial users -- Python, OpenJDK, Meta -- have since moved away).
 
 ---
 
