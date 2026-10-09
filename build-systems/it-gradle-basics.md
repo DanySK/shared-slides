@@ -98,7 +98,7 @@ La loro presenza segnala a Gradle che la cartella rappresenta un **progetto**
 
 ### Plugin
 
-Componente software contentente **task** pronti all'uso.
+Componente software contenente **task** pronti all'uso.
 Gradle contiene diversi plugin pronti all'uso
 (per i linguaggi più comuni, come Java).
 
