@@ -54,6 +54,12 @@ When two libraries depend on different versions of the same library, we have a *
     * Pick the latest and hope for the best?
     * Pick the earliest and hope for the best?
 
+Different tools, different defaults:
+* **Maven**: *nearest wins* -- the version declared closest to the root of the dependency tree is selected
+* **Gradle**: *highest wins* -- the highest requested version is selected (optimistic upgrade)
+* **npm**: *no single version needed* -- conflicting versions can coexist in nested `node_modules`
+* **pip**/**uv**/**Poetry** (Python): *one version per environment* -- the resolver must find a version satisfying all constraints, or fail
+
 ---
 
 ## Dependency ranges
