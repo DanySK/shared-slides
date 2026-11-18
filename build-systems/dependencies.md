@@ -134,17 +134,22 @@ to a known good set.
 ## Dependency scopes
 
 Dependencies may be needed in different contexts:
-* **Compile-time**: needed to compile the code (e.g., libraries whose types are used in method signatures)
-* **Runtime**: needed to run the code (e.g., libraries whose types are used in method bodies)
+* **Compile-time**: needed to compile the code (any library whose types are referenced in the source code)
+* **Runtime**: needed to run the code
     * Note: it is common for runtime dependencies to be a *superset* of compile-time dependencies
-    (some dependencies are runtime-only, e.g., JDBC drivers)
-    * Note: even though most of the time runtime dependencies are also compile-time dependencies,
-    this is not always the case (e.g., some components of ANTLR4...)
-* **Test**: needed to compile and run tests (e.g., testing frameworks)
-* **Test runtime**: needed to run tests (e.g., mocking frameworks)
+    (some dependencies are runtime-only, e.g., JDBC drivers or logging backends, loaded via reflection or `ServiceLoader`)
+    * Note: even though most of the time compile-time dependencies are also runtime dependencies,
+    this is not always the case (e.g., annotation-only libraries, some components of ANTLR4...)
+* **Test**: needed to compile and run tests (e.g., testing and mocking frameworks)
+* **Test runtime**: needed to run tests, but not to compile them (e.g., test engines such as the JUnit Platform launcher)
     * Note: similar to the runtime scope, test runtime dependencies are often a *superset* of test dependencies
 * **Build time**: needed to build the code (e.g., code generators, linters, documentation tools)
 * ...
+
+Orthogonally, libraries distinguish **API** from **implementation** dependencies:
+* **API**: types appear in the *public signatures* of the library, so consumers need them at *compile time* too
+* **Implementation**: used only *internally*, consumers need them only at *runtime*
+    * e.g., Gradle's `api` and `implementation` configurations
 
 Scopes are typically _pre-defined in **declarative** build systems_ and _manually defined in **imperative** ones_
 (there are exceptions to this rule).
