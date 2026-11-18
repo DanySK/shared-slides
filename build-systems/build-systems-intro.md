@@ -45,7 +45,7 @@ from code to artifacts
 * Difficult to *adapt* and *port* across projects
 
 **Declarative**/**Standard**: adhere to some convention, customizing some settings
-* *Examples*: Apache Maven, Python Poetry
+* *Examples*: Apache Maven, Python uv
 * Separation between *what* to do and *how* to do it
   * The build system decides how to do it
 * Easy to *adapt* and *port* across projects
