@@ -76,7 +76,8 @@ To reduce the risk of conflicts, some systems allow specifying *ranges* of accep
   * `(,1.3]` means "up to `1.3` (inclusive)"
   * `[1.2,)` means "from `1.2` (inclusive) onwards"
 * **Gradle** (Java, Kotlin, multiple languages)
-  * Same syntax as Maven, plus "rich versions": `1.2+` means "any `1.2` version", i.e., `>=1.2.0 <1.3.0`
+  * Same syntax as Maven, plus *prefix* (dynamic) versions: `1.2.+` means "any `1.2.x` version", i.e., `>=1.2.0 <1.3.0`
+  * **Rich versions** further refine the constraint: `strictly`, `require`, `prefer`, `reject`
 * **npm** / **pnpm** / **yarn** (JavaScript/TypeScript)
   * `^1.2.3` means "compatible with `1.2.3`", i.e., `>=1.2.3 <2.0.0`
   * `~1.2.3` means "approximately `1.2.3`", i.e., `>=1.2.3 <1.3.0`
@@ -87,6 +88,8 @@ To reduce the risk of conflicts, some systems allow specifying *ranges* of accep
   * `>=1.2, <=1.3` means "from `1.2` (inclusive) to `1.3` (inclusive)"
   * `<1.3` means "up to `1.3` (exclusive)"
   * `>=1.2` means "from `1.2` (inclusive) onwards"
+  * `~=1.2.3` means "compatible release", i.e., `>=1.2.3, <1.3.0`
+  * `==1.2.*` means "any `1.2` version", i.e., `>=1.2.0, <1.3.0`
 
 ---
 
